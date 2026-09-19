@@ -1,0 +1,3 @@
+# No multi-tenant abstraction in v1, despite a stated goal to scale later
+
+The manager explicitly wants to open this up to other FPL managers eventually, which might suggest building a data-access abstraction or user model now to make that swap cheap later. We decided against it: the current storage (a single JSON Snapshot file per run, see ADR-0001) is deliberately single-manager, and adding an abstraction for a hypothetical second manager risks guessing the wrong shape. When multi-tenancy is actually pursued, it will require swapping storage for a real database and adding authentication — treated as a distinct future project, not a v1 concern.

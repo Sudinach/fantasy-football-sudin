@@ -1,0 +1,29 @@
+[
+  {
+    "element_in": 10,
+    "element_in_cost": 55,
+    "element_out": 11,
+    "element_out_cost": 54,
+    "entry": 677035,
+    "event": 4,
+    "time": "2026-09-12T11:47:49.721531Z"
+  },
+  {
+    "element_in": 454,
+    "element_in_cost": 60,
+    "element_out": 155,
+    "element_out_cost": 69,
+    "entry": 677035,
+    "event": 3,
+    "time": "2026-08-30T13:53:12.664582Z"
+  },
+  {
+    "element_in": 165,
+    "element_in_cost": 76,
+    "element_out": 379,
+    "element_out_cost": 90,
+    "entry": 677035,
+    "event": 2,
+    "time": "2026-08-28T02:14:13.293395Z"
+  }
+]

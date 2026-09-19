@@ -1,0 +1,8 @@
+# Python
+analysis/.venv/
+**/__pycache__/
+*.pyc
+
+# Node / Next.js (added when web/ is scaffolded)
+web/node_modules/
+web/.next/

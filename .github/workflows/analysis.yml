@@ -1,0 +1,43 @@
+name: Analysis
+
+on:
+  schedule:
+    # Daily baseline refresh.
+    - cron: "0 6 * * *"
+    # Extra refresh on the common Fri/Sat/Sun deadline days, scheduled hours
+    # ahead of typical kickoff times since GitHub's cron can slip under load.
+    - cron: "0 7 * * 5,6,0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  run-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        working-directory: analysis
+        run: uv sync
+
+      - name: Run tests
+        working-directory: analysis
+        run: uv run pytest -q
+
+      - name: Run analysis and write snapshot
+        working-directory: analysis
+        env:
+          FPL_ENTRY_ID: ${{ vars.FPL_ENTRY_ID }}
+        run: uv run python scripts/run_snapshot.py "$FPL_ENTRY_ID"
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/snapshots
+          git commit -m "Update FPL snapshot" || echo "nothing to commit"
+          git push

@@ -1,0 +1,3 @@
+# Transfer Suggestions are advisory only; the app never submits transfers
+
+Automating FPL transfers is technically possible but requires reverse-engineering the official site's authenticated login/session flow — there is no documented, official write endpoint. We chose to keep the app read-only: it produces structured Transfer Suggestions (see `CONTEXT.md`) that the manager reviews and applies manually in the official FPL app. This avoids the account-ban and reliability risk of automating writes against an undocumented API. Suggestions are already structured as concrete actions (player out/in, cost, projected gain, hit cost) specifically so automated execution could be added later without changing the suggestion format.

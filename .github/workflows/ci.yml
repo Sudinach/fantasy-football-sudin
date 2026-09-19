@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        working-directory: analysis
+        run: uv sync
+
+      - name: Lint
+        working-directory: analysis
+        run: uv run ruff check .
+
+      - name: Test
+        working-directory: analysis
+        run: uv run pytest -q
+
+  # A `web` job (npm lint/build) is added once the Next.js app is scaffolded
+  # in Phase 4 -- there's nothing to check there yet.
