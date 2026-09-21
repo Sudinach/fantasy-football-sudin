@@ -60,7 +60,10 @@ A Gameweek in which one or more Premier League clubs have no fixture (postponeme
 A structured, advisory-only recommendation on whether to play Wildcard or Free Hit this Gameweek, and why -- distinct from a Transfer Suggestion, which recommends a single swap instead. Like Transfer Suggestions, Chip Advice is never acted on automatically (see ADR-0002).
 
 **Transfer Suggestion**:
-A structured recommendation produced by the analysis: a Player to sell, a Player to buy, the cost delta, the projected point gain over the Look-ahead Horizon, and any Hit cost incurred. Suggestions are advisory only — the app does not execute them (see ADR-0002).
+A structured recommendation produced by the analysis: a Player worth selling, paired with a ranked shortlist of 1-3 replacement Players to buy (best first, see Buy Option). Any Hit cost applies to the sell decision itself, not to any one replacement. Suggestions are advisory only — the app does not execute them (see ADR-0002).
+
+**Buy Option**:
+One ranked replacement candidate within a Transfer Suggestion: the Player to buy, the cost delta, and the projected point gain over the Look-ahead Horizon. Ranking multiple options per sell decision (rather than a single fixed pick) means an in-demand replacement can legitimately appear under more than one Transfer Suggestion without the list reading as duplicated.
 
 **Snapshot**:
 The JSON output of one analysis run: the Squad state, computed Trend/Consistency figures, and the resulting Transfer Suggestions at that point in time. Each run's Snapshot is committed to the repo, so the accumulated Snapshots double as historical data.

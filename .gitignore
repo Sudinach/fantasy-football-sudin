@@ -6,3 +6,6 @@ analysis/.venv/
 # Node / Next.js (added when web/ is scaffolded)
 web/node_modules/
 web/.next/
+
+# Vercel project link (local-only, created by `vercel link`)
+.vercel

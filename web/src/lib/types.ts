@@ -41,16 +41,21 @@ const PlayerRefSchema = z.object({
   position: z.string(),
 });
 
-const SuggestionSchema = z.object({
-  id: z.string(),
-  player_out: PlayerRefSchema,
+const BuyOptionSchema = z.object({
   player_in: PlayerRefSchema,
   cost_delta: z.number(),
   projected_point_gain: z.number(),
-  hit_cost: z.number(),
   net_projected_gain: z.number(),
-  free_transfers_available_at_suggestion: z.number(),
+  quality_score: z.number(),
   rationale: z.array(z.string()),
+});
+
+const SuggestionSchema = z.object({
+  id: z.string(),
+  player_out: PlayerRefSchema,
+  hit_cost: z.number(),
+  free_transfers_available_at_suggestion: z.number(),
+  options: z.array(BuyOptionSchema),
 });
 
 const ChipAdviceSchema = z.object({
@@ -98,4 +103,5 @@ export const SnapshotSchema = z.object({
 export type Snapshot = z.infer<typeof SnapshotSchema>;
 export type SquadPlayer = z.infer<typeof SquadPlayerSchema>;
 export type Suggestion = z.infer<typeof SuggestionSchema>;
+export type BuyOption = z.infer<typeof BuyOptionSchema>;
 export type ChipAdvice = z.infer<typeof ChipAdviceSchema>;

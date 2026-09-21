@@ -18,9 +18,10 @@ def test_suggests_a_clear_upgrade_within_budget():
 
     assert len(suggestions) == 1
     assert suggestions[0].player_out.player_id == 1
-    assert suggestions[0].player_in.player_id == 2
     assert suggestions[0].hit_cost == 0
-    assert suggestions[0].projected_point_gain == 12.0  # (6.0 - 2.0) * horizon(3)
+    assert len(suggestions[0].options) == 1
+    assert suggestions[0].options[0].player_in.player_id == 2
+    assert suggestions[0].options[0].projected_point_gain == 12.0  # (6.0 - 2.0) * horizon(3)
 
 
 def test_rejects_a_buy_candidate_outside_budget():
@@ -104,10 +105,11 @@ def test_hit_is_gated_behind_a_safety_margin_over_its_cost():
     assert no_suggestion == []
     assert len(with_hit) == 1
     assert with_hit[0].hit_cost == 4
-    assert with_hit[0].net_projected_gain == with_hit[0].projected_point_gain - 4
+    best = with_hit[0].options[0]
+    assert best.net_projected_gain == best.projected_point_gain - 4
 
 
-def test_suggestions_are_ordered_by_net_projected_gain_descending():
+def test_suggestions_are_ordered_by_best_options_net_projected_gain_descending():
     sell_a = player(1, web_name="A", position="MID", club_id=1, now_cost=50, trend=2.0)
     sell_b = player(2, web_name="B", position="DEF", club_id=1, now_cost=50, trend=2.0)
     small_gain = player(3, web_name="SmallGain", position="MID", club_id=2, now_cost=50, trend=4.0)
@@ -122,7 +124,7 @@ def test_suggestions_are_ordered_by_net_projected_gain_descending():
         club_counts={1: 2},
     )
 
-    assert [s.player_in.web_name for s in suggestions] == ["BigGain", "SmallGain"]
+    assert [s.options[0].player_in.web_name for s in suggestions] == ["BigGain", "SmallGain"]
 
 
 def test_uses_fixture_difficulty_to_favour_an_easier_run():
@@ -145,4 +147,69 @@ def test_uses_fixture_difficulty_to_favour_an_easier_run():
         club_counts={1: 1},
     )
 
-    assert suggestions[0].player_in.web_name == "EasyRun"
+    assert suggestions[0].options[0].player_in.web_name == "EasyRun"
+
+
+def test_a_sell_candidate_gets_multiple_ranked_alternatives_not_just_one():
+    sell = player(1, position="MID", club_id=1, now_cost=50, trend=2.0)
+    best = player(2, web_name="Best", position="MID", club_id=2, now_cost=50, trend=9.0)
+    middle = player(3, web_name="Middle", position="MID", club_id=3, now_cost=50, trend=7.0)
+    worst = player(4, web_name="Worst", position="MID", club_id=4, now_cost=50, trend=5.0)
+
+    suggestions = suggest_transfers(
+        squad=[sell],
+        candidate_pool=[best, middle, worst],
+        free_transfers=1,
+        bank=0,
+        bought_prices={1: 50},
+        club_counts={1: 1},
+    )
+
+    assert len(suggestions) == 1
+    names = [o.player_in.web_name for o in suggestions[0].options]
+    assert names == ["Best", "Middle", "Worst"]  # ranked best first
+
+
+def test_alternatives_are_capped_at_max_alternatives():
+    sell = player(1, position="MID", club_id=1, now_cost=50, trend=1.0)
+    candidates = [
+        player(10 + i, web_name=f"C{i}", position="MID", club_id=10 + i, now_cost=50, trend=2.0 + i)
+        for i in range(5)
+    ]
+
+    suggestions = suggest_transfers(
+        squad=[sell],
+        candidate_pool=candidates,
+        free_transfers=1,
+        bank=0,
+        bought_prices={1: 50},
+        club_counts={1: 1},
+        max_alternatives=2,
+    )
+
+    assert len(suggestions[0].options) == 2
+    assert suggestions[0].options[0].player_in.web_name == "C4"  # highest trend, ranked first
+    assert suggestions[0].options[1].player_in.web_name == "C3"
+
+
+def test_the_same_in_demand_replacement_can_appear_under_multiple_sell_candidates():
+    # This is the real-world case this grouped shape exists for: two weak
+    # squad players in the same position both have the same standout
+    # replacement as their best option, without the list looking like a
+    # flat, confusing duplicate (see CONTEXT.md's "Buy Option").
+    sell_a = player(1, web_name="A", position="MID", club_id=1, now_cost=50, trend=1.0)
+    sell_b = player(2, web_name="B", position="MID", club_id=1, now_cost=50, trend=1.5)
+    star = player(3, web_name="Star", position="MID", club_id=2, now_cost=50, trend=9.0)
+
+    suggestions = suggest_transfers(
+        squad=[sell_a, sell_b],
+        candidate_pool=[star],
+        free_transfers=2,
+        bank=0,
+        bought_prices={1: 50, 2: 50},
+        club_counts={1: 2},
+    )
+
+    assert len(suggestions) == 2
+    assert all(s.options[0].player_in.web_name == "Star" for s in suggestions)
+    assert {s.player_out.web_name for s in suggestions} == {"A", "B"}

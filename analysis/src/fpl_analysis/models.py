@@ -164,15 +164,30 @@ class PlayerAnalysis:
 
 
 @dataclass(frozen=True)
-class TransferSuggestion:
-    player_out: PlayerAnalysis
+class BuyOption:
+    """One ranked replacement candidate within a TransferSuggestion."""
+
     player_in: PlayerAnalysis
     cost_delta: float  # decimal £m, positive means spending more
     projected_point_gain: float
-    hit_cost: int
     net_projected_gain: float
-    free_transfers_available: int
+    quality_score: float  # this candidate's own 0-100 quality_score, for ranking/display
     rationale: list[str]
+
+
+@dataclass(frozen=True)
+class TransferSuggestion:
+    """A Player worth selling, with 1-3 ranked replacement options (best first).
+
+    hit_cost and free_transfers_available describe the swap itself, not any
+    one option -- which replacement you pick doesn't change how many Free
+    Transfers you have or whether this swap costs a Hit.
+    """
+
+    player_out: PlayerAnalysis
+    options: list[BuyOption]
+    hit_cost: int
+    free_transfers_available: int
 
 
 @dataclass(frozen=True)

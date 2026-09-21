@@ -65,20 +65,28 @@ def _squad_player_dict(result: AnalysisResult, squad_player, analysis) -> dict:
     }
 
 
-def _suggestion_dict(result: AnalysisResult, suggestion, suggestion_id: str) -> dict:
-    def _player_ref(p) -> dict:
-        return {"player_id": p.player_id, "web_name": p.web_name, "position": p.position}
+def _player_ref(p) -> dict:
+    return {"player_id": p.player_id, "web_name": p.web_name, "position": p.position}
 
+
+def _buy_option_dict(option) -> dict:
+    return {
+        "player_in": _player_ref(option.player_in),
+        "cost_delta": option.cost_delta,
+        "projected_point_gain": option.projected_point_gain,
+        "net_projected_gain": option.net_projected_gain,
+        "quality_score": option.quality_score,
+        "rationale": option.rationale,
+    }
+
+
+def _suggestion_dict(result: AnalysisResult, suggestion, suggestion_id: str) -> dict:
     return {
         "id": suggestion_id,
         "player_out": _player_ref(suggestion.player_out),
-        "player_in": _player_ref(suggestion.player_in),
-        "cost_delta": round(suggestion.cost_delta, 1),
-        "projected_point_gain": suggestion.projected_point_gain,
         "hit_cost": suggestion.hit_cost,
-        "net_projected_gain": suggestion.net_projected_gain,
         "free_transfers_available_at_suggestion": suggestion.free_transfers_available,
-        "rationale": suggestion.rationale,
+        "options": [_buy_option_dict(o) for o in suggestion.options],
     }
 
 
