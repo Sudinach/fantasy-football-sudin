@@ -47,6 +47,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <Link href="/trend" className="hover:underline">
                 Trend
               </Link>
+              <Link href="/chips" className="hover:underline">
+                Chips
+              </Link>
             </nav>
             <p className="text-xs text-zinc-500 dark:text-zinc-400">
               GW{snapshot.gameweek.current} &middot; updated {formatGeneratedAt(snapshot.generated_at)}

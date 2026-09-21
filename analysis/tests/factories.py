@@ -1,6 +1,7 @@
 """Small synthetic-data builders shared across analysis-module tests."""
 
 from fpl_analysis.models import (
+    ChipStatus,
     FixtureDifficulty,
     GwStatLine,
     GwTransferActivity,
@@ -59,6 +60,24 @@ def player(
         defcon_hit_rate=defcon_hit_rate,
         minutes_reliability=minutes_reliability,
         fixture_difficulty_next=fixture_difficulty_next or [fixture_difficulty()],
+    )
+
+
+def chip_status(
+    name: str = "wildcard",
+    window_number: int = 1,
+    start_event: int = 2,
+    stop_event: int = 19,
+    played_event: int | None = None,
+    is_available: bool = True,
+) -> ChipStatus:
+    return ChipStatus(
+        name=name,
+        window_number=window_number,
+        start_event=start_event,
+        stop_event=stop_event,
+        played_event=played_event,
+        is_available=is_available,
     )
 
 

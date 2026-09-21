@@ -53,6 +53,14 @@ const SuggestionSchema = z.object({
   rationale: z.array(z.string()),
 });
 
+const ChipAdviceSchema = z.object({
+  chip: z.enum(["wildcard", "freehit"]),
+  is_available: z.boolean(),
+  recommended: z.boolean(),
+  target_gameweek: z.number().nullable(),
+  reasoning: z.array(z.string()),
+});
+
 export const SnapshotSchema = z.object({
   schema_version: z.number(),
   generated_at: z.string(),
@@ -78,6 +86,7 @@ export const SnapshotSchema = z.object({
     ),
   }),
   suggestions: z.array(SuggestionSchema),
+  chip_advice: z.array(ChipAdviceSchema),
   meta: z.object({
     analysis_horizon_gws: z.number(),
     trend_window_gws: z.number(),
@@ -89,3 +98,4 @@ export const SnapshotSchema = z.object({
 export type Snapshot = z.infer<typeof SnapshotSchema>;
 export type SquadPlayer = z.infer<typeof SquadPlayerSchema>;
 export type Suggestion = z.infer<typeof SuggestionSchema>;
+export type ChipAdvice = z.infer<typeof ChipAdviceSchema>;

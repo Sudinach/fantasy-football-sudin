@@ -173,3 +173,34 @@ class TransferSuggestion:
     net_projected_gain: float
     free_transfers_available: int
     rationale: list[str]
+
+
+@dataclass(frozen=True)
+class ChipWindow:
+    """One playable instance of a transfer-affecting Chip, from bootstrap-static's `chips`."""
+
+    name: str  # "wildcard" | "freehit"
+    window_number: int  # 1 (first half of the season) or 2 (second half)
+    start_event: int
+    stop_event: int
+
+
+@dataclass(frozen=True)
+class ChipStatus:
+    """A ChipWindow cross-referenced with one manager's play history."""
+
+    name: str
+    window_number: int
+    start_event: int
+    stop_event: int
+    played_event: int | None
+    is_available: bool  # not yet played, and the current gameweek falls within the window
+
+
+@dataclass(frozen=True)
+class ChipAdvice:
+    chip: str  # "wildcard" | "freehit"
+    is_available: bool
+    recommended: bool
+    target_gameweek: int | None  # the gameweek the advice applies to, when recommended
+    reasoning: list[str]

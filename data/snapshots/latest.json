@@ -883,6 +883,26 @@
       ]
     }
   ],
+  "chip_advice": [
+    {
+      "chip": "wildcard",
+      "is_available": true,
+      "recommended": false,
+      "target_gameweek": null,
+      "reasoning": [
+        "Only 1 squad player(s) are clearly outclassed -- not enough to justify a rebuild."
+      ]
+    },
+    {
+      "chip": "freehit",
+      "is_available": true,
+      "recommended": false,
+      "target_gameweek": null,
+      "reasoning": [
+        "No blank gameweek hits 3+ of your squad's clubs in the next 8 gameweeks -- save it."
+      ]
+    }
+  ],
   "meta": {
     "analysis_horizon_gws": 3,
     "trend_window_gws": 8,

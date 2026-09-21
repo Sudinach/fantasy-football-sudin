@@ -82,6 +82,16 @@ def _suggestion_dict(result: AnalysisResult, suggestion, suggestion_id: str) -> 
     }
 
 
+def _chip_advice_dict(advice) -> dict:
+    return {
+        "chip": advice.chip,
+        "is_available": advice.is_available,
+        "recommended": advice.recommended,
+        "target_gameweek": advice.target_gameweek,
+        "reasoning": advice.reasoning,
+    }
+
+
 def build_snapshot(result: AnalysisResult) -> dict:
     return {
         "schema_version": SCHEMA_VERSION,
@@ -110,6 +120,7 @@ def build_snapshot(result: AnalysisResult) -> dict:
             _suggestion_dict(result, s, f"gw{result.gameweek}-{i + 1:03d}")
             for i, s in enumerate(result.suggestions)
         ],
+        "chip_advice": [_chip_advice_dict(a) for a in result.chip_advice],
         "meta": {
             "analysis_horizon_gws": DEFAULT_HORIZON,
             "trend_window_gws": TREND_WINDOW,

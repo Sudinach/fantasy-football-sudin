@@ -1,10 +1,16 @@
 from factories import player, squad_player
 
+from fpl_analysis.models import ChipAdvice
 from fpl_analysis.pipeline import AnalysisResult
 from fpl_analysis.snapshot import SCHEMA_VERSION, build_snapshot
 
+_DEFAULT_CHIP_ADVICE = [
+    ChipAdvice("wildcard", True, False, None, ["Only 0 squad player(s) are clearly outclassed."]),
+    ChipAdvice("freehit", True, False, None, ["No blank gameweek severe enough -- save it."]),
+]
 
-def _make_result(suggestions=()) -> AnalysisResult:
+
+def _make_result(suggestions=(), chip_advice=_DEFAULT_CHIP_ADVICE) -> AnalysisResult:
     sp = squad_player(1, web_name="Haaland", club="Man City", club_id=12, position="FWD", squad_slot=1)
     pa = player(1, web_name="Haaland", position="FWD", club_id=12, now_cost=145, trend=7.4, consistency=0.6)
 
@@ -27,6 +33,7 @@ def _make_result(suggestions=()) -> AnalysisResult:
         bought_prices={1: 140},
         points_trend=[{"event": 1, "points": 62, "overall_rank": 1500000}],
         suggestions=list(suggestions),
+        chip_advice=list(chip_advice),
     )
 
 
@@ -36,7 +43,7 @@ def test_snapshot_has_the_expected_top_level_shape():
     assert snapshot["schema_version"] == SCHEMA_VERSION
     assert set(snapshot.keys()) == {
         "schema_version", "generated_at", "gameweek", "manager", "squad",
-        "points_trend", "suggestions", "meta",
+        "points_trend", "suggestions", "chip_advice", "meta",
     }
 
 

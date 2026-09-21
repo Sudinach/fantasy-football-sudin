@@ -41,6 +41,24 @@ This app's own computed measure of how reliably a Player returns points Gameweek
 **Look-ahead Horizon**:
 The number of upcoming Gameweeks (default: 3) the suggestion engine considers when weighing fixture difficulty and projected returns for a potential transfer.
 
+**Chip**:
+A one-per-window special power a manager can play instead of the normal transfer rules. FPL's current chips are Wildcard, Free Hit, Bench Boost, and Triple Captain. This app only reasons about Wildcard and Free Hit, since those two affect transfers (its domain); Bench Boost and Triple Captain affect scoring only and are out of scope.
+
+**Wildcard**:
+A Chip that makes every transfer in that Gameweek free of Hits, with no cap on how many are made. Offered twice a season, once per Chip Window; left unplayed, it doesn't carry into the next Window.
+
+**Free Hit**:
+A Chip like Wildcard (unlimited free transfers for one Gameweek), except the Squad automatically reverts to its pre-Chip state once that Gameweek ends. Used tactically for a single awkward Gameweek (see Blank Gameweek) rather than a lasting squad change.
+
+**Chip Window**:
+The span of Gameweeks, per FPL's own bootstrap data, during which one instance of a Chip can be played. Wildcard and Free Hit each get two Windows a season (first half / second half); playing the chip, or letting its Window close unplayed, ends that instance.
+
+**Blank Gameweek**:
+A Gameweek in which one or more Premier League clubs have no fixture (postponements, cup schedule clashes), so any Squad player at those clubs scores zero regardless of form.
+
+**Chip Advice**:
+A structured, advisory-only recommendation on whether to play Wildcard or Free Hit this Gameweek, and why -- distinct from a Transfer Suggestion, which recommends a single swap instead. Like Transfer Suggestions, Chip Advice is never acted on automatically (see ADR-0002).
+
 **Transfer Suggestion**:
 A structured recommendation produced by the analysis: a Player to sell, a Player to buy, the cost delta, the projected point gain over the Look-ahead Horizon, and any Hit cost incurred. Suggestions are advisory only — the app does not execute them (see ADR-0002).
 

@@ -16,12 +16,15 @@ from dataclasses import dataclass
 
 import requests
 
+from fpl_analysis.chip_advice import free_hit_advice, wildcard_advice
+from fpl_analysis.chips import chip_status_for_manager, chip_windows_from_bootstrap, relevant_status
 from fpl_analysis.consistency import compute_consistency
 from fpl_analysis.defcon import defcon_hit_rate
 from fpl_analysis.fixtures import DEFAULT_HORIZON, next_n_fixtures
 from fpl_analysis.fpl_client import FplClient
 from fpl_analysis.free_transfers import derive_ft_bank
 from fpl_analysis.models import (
+    ChipAdvice,
     PlayerAnalysis,
     SquadPlayer,
     TransferSuggestion,
@@ -60,6 +63,7 @@ class AnalysisResult:
     bought_prices: dict[int, int]  # player_id -> tenths of £m
     points_trend: list[dict]  # [{event, points, overall_rank}, ...]
     suggestions: list[TransferSuggestion]
+    chip_advice: list[ChipAdvice]
 
 
 RECENT_POINTS_COUNT = 5
@@ -183,7 +187,8 @@ def run(entry_id: int, client: FplClient | None = None) -> AnalysisResult:
         club_counts[p.club_id] = club_counts.get(p.club_id, 0) + 1
 
     latest_gw_state = entry_history["current"][-1]
-    free_transfers = derive_ft_bank(transfer_activity_from_history(entry_history))
+    transfer_activity = transfer_activity_from_history(entry_history)
+    free_transfers = derive_ft_bank(transfer_activity)
 
     suggestions = suggest_transfers(
         squad=squad_analysis,
@@ -195,6 +200,25 @@ def run(entry_id: int, client: FplClient | None = None) -> AnalysisResult:
     )
 
     quality_scores = score_pool(squad_analysis + candidate_analysis)
+
+    chip_windows = chip_windows_from_bootstrap(bootstrap_static)
+    chip_statuses = chip_status_for_manager(chip_windows, transfer_activity, current_gw)
+    chip_advice = [
+        wildcard_advice(
+            squad=squad_analysis,
+            candidate_pool=candidate_analysis,
+            scores=quality_scores,
+            free_transfers=free_transfers,
+            status=relevant_status(chip_statuses, "wildcard", current_gw),
+        ),
+        free_hit_advice(
+            squad_club_ids=[p.club_id for p in squad],
+            fixtures=fixtures,
+            current_gw=current_gw,
+            status=relevant_status(chip_statuses, "freehit", current_gw),
+        ),
+    ]
+
     current_event = next(e for e in bootstrap_static["events"] if e["id"] == current_gw)
     teams = {t["id"]: t["name"] for t in bootstrap_static["teams"]}
     points_trend = [
@@ -221,4 +245,5 @@ def run(entry_id: int, client: FplClient | None = None) -> AnalysisResult:
         bought_prices=bought_prices,
         points_trend=points_trend,
         suggestions=suggestions,
+        chip_advice=chip_advice,
     )
