@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-11T11:43:03Z",
+  "generated_at": "2026-10-11T13:37:19Z",
   "gameweek": {
     "current": 6,
     "next_deadline": "2026-10-17T10:00:00Z",
@@ -10,7 +10,7 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9799777,
+    "overall_rank": 9823184,
     "total_points": 215,
     "bank": 2.4,
     "team_value": 98.6,
@@ -817,17 +817,17 @@
         },
         {
           "player_in": {
-            "player_id": 229,
-            "web_name": "Tarkowski",
+            "player_id": 504,
+            "web_name": "Vuskovic",
             "position": "DEF"
           },
-          "cost_delta": 1.3,
-          "projected_point_gain": 11.5,
-          "net_projected_gain": 11.5,
-          "quality_score": 42.6,
+          "cost_delta": 0.1,
+          "projected_point_gain": 11.2,
+          "net_projected_gain": 11.2,
+          "quality_score": 44.8,
           "rationale": [
-            "Martinez's recent trend (1.0) trails Tarkowski's (5.6).",
-            "Tarkowski's next fixtures: difficulty 4, 5, 3.",
+            "Martinez's recent trend (1.0) trails Vuskovic's (5.3).",
+            "Vuskovic's next fixtures: difficulty 2, 4, 5.",
             "No hit required."
           ]
         }
@@ -877,17 +877,17 @@
         },
         {
           "player_in": {
-            "player_id": 229,
-            "web_name": "Tarkowski",
+            "player_id": 504,
+            "web_name": "Vuskovic",
             "position": "DEF"
           },
-          "cost_delta": 0.7,
-          "projected_point_gain": 9.6,
-          "net_projected_gain": 9.6,
-          "quality_score": 42.6,
+          "cost_delta": -0.5,
+          "projected_point_gain": 9.4,
+          "net_projected_gain": 9.4,
+          "quality_score": 44.8,
           "rationale": [
-            "Hill's recent trend (1.7) trails Tarkowski's (5.6).",
-            "Tarkowski's next fixtures: difficulty 4, 5, 3.",
+            "Hill's recent trend (1.7) trails Vuskovic's (5.3).",
+            "Vuskovic's next fixtures: difficulty 2, 4, 5.",
             "No hit required."
           ]
         }
