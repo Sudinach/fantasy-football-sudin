@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-13T13:04:03Z",
+  "generated_at": "2026-10-14T10:45:43Z",
   "gameweek": {
     "current": 6,
     "next_deadline": "2026-10-17T10:00:00Z",
-    "is_current_gw_finished": false
+    "is_current_gw_finished": true
   },
   "manager": {
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9782797,
+    "overall_rank": 9782726,
     "total_points": 239,
     "bank": 2.4,
     "team_value": 98.6,
@@ -801,6 +801,22 @@
         },
         {
           "player_in": {
+            "player_id": 656,
+            "web_name": "Mfuni",
+            "position": "DEF"
+          },
+          "cost_delta": -0.9,
+          "projected_point_gain": 11.7,
+          "net_projected_gain": 11.7,
+          "quality_score": 55.3,
+          "rationale": [
+            "Martinez's recent trend (1.0) trails Mfuni's (4.7).",
+            "Mfuni's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
             "player_id": 176,
             "web_name": "Dasilva",
             "position": "DEF"
@@ -812,22 +828,6 @@
           "rationale": [
             "Martinez's recent trend (1.0) trails Dasilva's (4.6).",
             "Dasilva's next fixtures: difficulty 3, 2, 3.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 504,
-            "web_name": "Vuskovic",
-            "position": "DEF"
-          },
-          "cost_delta": 0.1,
-          "projected_point_gain": 11.2,
-          "net_projected_gain": 11.2,
-          "quality_score": 44.8,
-          "rationale": [
-            "Martinez's recent trend (1.0) trails Vuskovic's (5.3).",
-            "Vuskovic's next fixtures: difficulty 2, 4, 5.",
             "No hit required."
           ]
         }
@@ -921,6 +921,22 @@
         },
         {
           "player_in": {
+            "player_id": 656,
+            "web_name": "Mfuni",
+            "position": "DEF"
+          },
+          "cost_delta": -1.5,
+          "projected_point_gain": 9.9,
+          "net_projected_gain": 9.9,
+          "quality_score": 55.3,
+          "rationale": [
+            "Hill's recent trend (1.7) trails Mfuni's (4.7).",
+            "Mfuni's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
             "player_id": 176,
             "web_name": "Dasilva",
             "position": "DEF"
@@ -932,22 +948,6 @@
           "rationale": [
             "Hill's recent trend (1.7) trails Dasilva's (4.6).",
             "Dasilva's next fixtures: difficulty 3, 2, 3.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 504,
-            "web_name": "Vuskovic",
-            "position": "DEF"
-          },
-          "cost_delta": -0.5,
-          "projected_point_gain": 9.4,
-          "net_projected_gain": 9.4,
-          "quality_score": 44.8,
-          "rationale": [
-            "Hill's recent trend (1.7) trails Vuskovic's (5.3).",
-            "Vuskovic's next fixtures: difficulty 2, 4, 5.",
             "No hit required."
           ]
         }
@@ -1040,21 +1040,6 @@
         },
         {
           "player_in": {
-            "player_id": 316,
-            "web_name": "Emersonn",
-            "position": "FWD"
-          },
-          "cost_delta": 0.6,
-          "projected_point_gain": 11.6,
-          "net_projected_gain": 11.6,
-          "quality_score": 35.3,
-          "rationale": [
-            "Emersonn's next fixtures: difficulty 5, 3, 2.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
             "player_id": 138,
             "web_name": "Kostoulas",
             "position": "FWD"
@@ -1065,6 +1050,21 @@
           "quality_score": 31.5,
           "rationale": [
             "Kostoulas's next fixtures: difficulty 2, 4, 5.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 166,
+            "web_name": "N.Jackson",
+            "position": "FWD"
+          },
+          "cost_delta": 1.6,
+          "projected_point_gain": 11.1,
+          "net_projected_gain": 11.1,
+          "quality_score": 37.8,
+          "rationale": [
+            "N.Jackson's next fixtures: difficulty 3, 4, 2.",
             "No hit required."
           ]
         }
