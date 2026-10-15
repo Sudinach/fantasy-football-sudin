@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-14T10:45:43Z",
+  "generated_at": "2026-10-15T10:28:24Z",
   "gameweek": {
     "current": 6,
     "next_deadline": "2026-10-17T10:00:00Z",
@@ -10,7 +10,7 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9782726,
+    "overall_rank": 9782678,
     "total_points": 239,
     "bank": 2.4,
     "team_value": 98.6,
@@ -1040,6 +1040,21 @@
         },
         {
           "player_in": {
+            "player_id": 316,
+            "web_name": "Emersonn",
+            "position": "FWD"
+          },
+          "cost_delta": 0.6,
+          "projected_point_gain": 11.6,
+          "net_projected_gain": 11.6,
+          "quality_score": 35.3,
+          "rationale": [
+            "Emersonn's next fixtures: difficulty 5, 3, 2.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
             "player_id": 138,
             "web_name": "Kostoulas",
             "position": "FWD"
@@ -1050,21 +1065,6 @@
           "quality_score": 31.5,
           "rationale": [
             "Kostoulas's next fixtures: difficulty 2, 4, 5.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 166,
-            "web_name": "N.Jackson",
-            "position": "FWD"
-          },
-          "cost_delta": 1.6,
-          "projected_point_gain": 11.1,
-          "net_projected_gain": 11.1,
-          "quality_score": 37.8,
-          "rationale": [
-            "N.Jackson's next fixtures: difficulty 3, 4, 2.",
             "No hit required."
           ]
         }
