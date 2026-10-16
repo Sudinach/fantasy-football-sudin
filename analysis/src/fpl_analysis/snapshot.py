@@ -90,6 +90,32 @@ def _suggestion_dict(result: AnalysisResult, suggestion, suggestion_id: str) -> 
     }
 
 
+def _planned_transfer_dict(transfer) -> dict:
+    return {
+        "player_out": _player_ref(transfer.player_out),
+        "player_in": _player_ref(transfer.player_in),
+        "sell_price": _pounds(transfer.sell_price),
+        "buy_price": _pounds(transfer.player_in.now_cost),
+        "projected_point_gain": transfer.projected_point_gain,
+        "rationale": transfer.rationale,
+    }
+
+
+def _chip_plan_dict(plan) -> dict | None:
+    if plan is None:
+        return None
+    return {
+        "chip": plan.chip,
+        "target_gameweek": plan.target_gameweek,
+        "horizon_gws": plan.horizon,
+        "transfer_count": len(plan.transfers),
+        "bank_before": _pounds(plan.bank_before),
+        "bank_after": _pounds(plan.bank_after),
+        "projected_point_gain": plan.projected_point_gain,
+        "transfers": [_planned_transfer_dict(t) for t in plan.transfers],
+    }
+
+
 def _chip_advice_dict(advice) -> dict:
     return {
         "chip": advice.chip,
@@ -97,6 +123,7 @@ def _chip_advice_dict(advice) -> dict:
         "recommended": advice.recommended,
         "target_gameweek": advice.target_gameweek,
         "reasoning": advice.reasoning,
+        "plan": _chip_plan_dict(advice.plan),
     }
 
 

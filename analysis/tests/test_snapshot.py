@@ -1,6 +1,6 @@
 from factories import player, squad_player
 
-from fpl_analysis.models import ChipAdvice
+from fpl_analysis.models import ChipAdvice, ChipPlan, PlannedTransfer
 from fpl_analysis.pipeline import AnalysisResult
 from fpl_analysis.snapshot import SCHEMA_VERSION, build_snapshot
 
@@ -86,3 +86,45 @@ def test_schema_round_trips_through_json():
     reparsed = json.loads(json.dumps(snapshot))
 
     assert reparsed == snapshot
+
+
+def test_chip_advice_has_no_plan_when_the_chip_is_not_recommended():
+    snapshot = build_snapshot(_make_result())
+
+    assert all(advice["plan"] is None for advice in snapshot["chip_advice"])
+
+
+def test_recommended_chip_serializes_its_plan_with_decimal_money():
+    plan = ChipPlan(
+        chip="wildcard",
+        target_gameweek=6,
+        horizon=3,
+        transfers=[
+            PlannedTransfer(
+                player_out=player(1, web_name="Haaland", position="FWD", now_cost=145),
+                player_in=player(2, web_name="Salah", position="MID", now_cost=130),
+                sell_price=142,
+                projected_point_gain=8.3,
+                rationale=["Haaland projects 12.0 pts over the next 3 gameweeks; Salah projects 20.3."],
+            )
+        ],
+        bank_before=32,
+        bank_after=44,
+        projected_point_gain=8.3,
+    )
+    advice = [ChipAdvice("wildcard", True, True, 6, ["Rebuild time."], plan)]
+
+    plan_dict = build_snapshot(_make_result(chip_advice=advice))["chip_advice"][0]["plan"]
+
+    assert plan_dict["target_gameweek"] == 6
+    assert plan_dict["horizon_gws"] == 3
+    assert plan_dict["transfer_count"] == 1
+    assert plan_dict["bank_before"] == 3.2
+    assert plan_dict["bank_after"] == 4.4
+    assert plan_dict["projected_point_gain"] == 8.3
+
+    [transfer] = plan_dict["transfers"]
+    assert transfer["player_out"]["web_name"] == "Haaland"
+    assert transfer["player_in"]["web_name"] == "Salah"
+    assert transfer["sell_price"] == 14.2
+    assert transfer["buy_price"] == 13.0

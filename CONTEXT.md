@@ -57,7 +57,13 @@ The span of Gameweeks, per FPL's own bootstrap data, during which one instance o
 A Gameweek in which one or more Premier League clubs have no fixture (postponements, cup schedule clashes), so any Squad player at those clubs scores zero regardless of form.
 
 **Chip Advice**:
-A structured, advisory-only recommendation on whether to play Wildcard or Free Hit this Gameweek, and why -- distinct from a Transfer Suggestion, which recommends a single swap instead. Like Transfer Suggestions, Chip Advice is never acted on automatically (see ADR-0002).
+A structured, advisory-only recommendation on whether to play Wildcard or Free Hit this Gameweek, and why -- distinct from a Transfer Suggestion, which recommends a single swap instead. When a Chip is recommended, the advice carries a Chip Plan saying what to actually do with it. Like Transfer Suggestions, Chip Advice is never acted on automatically (see ADR-0002).
+
+**Chip Plan**:
+The set of transfers to make if a recommended Chip is played: a package of Planned Transfers that moves the Squad to the one the Chip pays for, within the manager's budget and FPL's squad rules. Built only for a Chip the Chip Advice recommends. A Wildcard plan optimises over the Look-ahead Horizon (the changes stick); a Free Hit plan optimises for its target Gameweek alone (the Squad reverts), which is why a Free Hit plan will sell a good Player whose Club has a Blank Gameweek that week.
+
+**Planned Transfer**:
+One out/in pair inside a Chip Plan. Unlike a Transfer Suggestion's Buy Option there are no ranked alternatives and no Hit cost -- the Chip makes every transfer in the plan free, and the plan is applied as a whole, since each transfer's budget assumes the earlier sales in the list have gone through.
 
 **Transfer Suggestion**:
 A structured recommendation produced by the analysis: a Player worth selling, paired with a ranked shortlist of 1-3 replacement Players to buy (best first, see Buy Option). Any Hit cost applies to the sell decision itself, not to any one replacement. Suggestions are advisory only — the app does not execute them (see ADR-0002).

@@ -30,10 +30,15 @@ def wildcard_advice(
     scores: dict[int, float],
     free_transfers: int,
     status: ChipStatus,
+    target_gameweek: int,
 ) -> ChipAdvice:
     """Recommends Wildcard when several squad players are well behind the best
     available replacement in their position -- fixing them one at a time would
     cost more Hits than the manager's Free Transfers cover.
+
+    `target_gameweek` is the gameweek a wildcard played now would take effect
+    in (the next deadline); unlike Free Hit there's nothing to pick, but it's
+    echoed back so the advice says which deadline it's talking about.
     """
     if not status.is_available:
         return ChipAdvice("wildcard", False, False, None, [_unavailable_reason(status)])
@@ -72,7 +77,7 @@ def wildcard_advice(
             "Your free transfers cover them without a Hit, but Wildcard lets you fix them all "
             "at once and re-optimise the rest of the squad in the same move."
         )
-    return ChipAdvice("wildcard", True, True, None, reasoning)
+    return ChipAdvice("wildcard", True, True, target_gameweek, reasoning)
 
 
 def _blank_gw_counts(

@@ -213,9 +213,45 @@ class ChipStatus:
 
 
 @dataclass(frozen=True)
+class PlannedTransfer:
+    """One out/in pair within a ChipPlan.
+
+    Unlike a TransferSuggestion's BuyOption there is no alternatives list and
+    no Hit cost: a Chip Plan's transfers are a single package the manager
+    applies as a whole, and the chip makes every one of them free.
+    """
+
+    player_out: PlayerAnalysis
+    player_in: PlayerAnalysis
+    sell_price: int  # tenths of £m, what player_out raises towards player_in
+    projected_point_gain: float  # over the plan's window, not per gameweek
+    rationale: list[str]
+
+
+@dataclass(frozen=True)
+class ChipPlan:
+    """The concrete transfers to make if a recommended Chip is actually played.
+
+    Chip Advice answers *whether* to burn the chip; this answers what to do
+    with it. `horizon` is how many gameweeks the plan optimised over -- 3 for
+    Wildcard (the changes stick, so the look-ahead horizon applies) but 1 for
+    Free Hit, whose squad reverts after `target_gameweek`.
+    """
+
+    chip: str  # "wildcard" | "freehit"
+    target_gameweek: int
+    horizon: int
+    transfers: list[PlannedTransfer]
+    bank_before: int  # tenths of £m
+    bank_after: int
+    projected_point_gain: float
+
+
+@dataclass(frozen=True)
 class ChipAdvice:
     chip: str  # "wildcard" | "freehit"
     is_available: bool
     recommended: bool
     target_gameweek: int | None  # the gameweek the advice applies to, when recommended
     reasoning: list[str]
+    plan: ChipPlan | None = None  # the transfers to make; only built when recommended

@@ -7,6 +7,17 @@ from fpl_analysis.models import FixtureDifficulty
 DEFAULT_HORIZON = 3
 
 
+def _to_difficulty(fixture: dict, club_id: int) -> FixtureDifficulty:
+    """One raw API fixture, seen from `club_id`'s side of it."""
+    is_home = fixture["team_h"] == club_id
+    return FixtureDifficulty(
+        event=fixture["event"],
+        opponent_club_id=fixture["team_a"] if is_home else fixture["team_h"],
+        is_home=is_home,
+        difficulty=fixture["team_h_difficulty"] if is_home else fixture["team_a_difficulty"],
+    )
+
+
 def next_n_fixtures(
     fixtures: list[dict], club_id: int, from_event: int, horizon: int = DEFAULT_HORIZON
 ) -> list[FixtureDifficulty]:
@@ -32,17 +43,24 @@ def next_n_fixtures(
     for fixture in relevant:
         if fixture["event"] not in events_seen and len(events_seen) >= horizon:
             break
-        is_home = fixture["team_h"] == club_id
-        result.append(
-            FixtureDifficulty(
-                event=fixture["event"],
-                opponent_club_id=fixture["team_a"] if is_home else fixture["team_h"],
-                is_home=is_home,
-                difficulty=fixture["team_h_difficulty"] if is_home else fixture["team_a_difficulty"],
-            )
-        )
+        result.append(_to_difficulty(fixture, club_id))
         events_seen.add(fixture["event"])
     return result
+
+
+def fixtures_in_event(fixtures: list[dict], club_id: int, event: int) -> list[FixtureDifficulty]:
+    """A club's fixtures in one specific gameweek.
+
+    Empty for a Blank Gameweek and two entries for a Double Gameweek -- unlike
+    next_n_fixtures(), which walks forward until it has `horizon` gameweeks of
+    football, this pins to a single gameweek, so "nothing here" is a real and
+    meaningful answer (it's what Free Hit planning keys off).
+    """
+    return [
+        _to_difficulty(f, club_id)
+        for f in fixtures
+        if f["event"] == event and club_id in (f["team_h"], f["team_a"])
+    ]
 
 
 # FPL difficulty is 1 (easiest) - 5 (hardest); this maps it to a multiplier

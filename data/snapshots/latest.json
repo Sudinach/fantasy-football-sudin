@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-15T10:28:24Z",
+  "generated_at": "2026-10-16T01:37:18Z",
   "gameweek": {
     "current": 6,
     "next_deadline": "2026-10-17T10:00:00Z",
@@ -10,7 +10,7 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9782678,
+    "overall_rank": 9782606,
     "total_points": 239,
     "bank": 2.4,
     "team_value": 98.6,
@@ -1040,16 +1040,16 @@
         },
         {
           "player_in": {
-            "player_id": 316,
-            "web_name": "Emersonn",
+            "player_id": 552,
+            "web_name": "Brobbey",
             "position": "FWD"
           },
-          "cost_delta": 0.6,
-          "projected_point_gain": 11.6,
-          "net_projected_gain": 11.6,
-          "quality_score": 35.3,
+          "cost_delta": 0.7,
+          "projected_point_gain": 15.8,
+          "net_projected_gain": 15.8,
+          "quality_score": 46.3,
           "rationale": [
-            "Emersonn's next fixtures: difficulty 5, 3, 2.",
+            "Brobbey's next fixtures: difficulty 3, 3, 2.",
             "No hit required."
           ]
         },
@@ -1076,11 +1076,231 @@
       "chip": "wildcard",
       "is_available": true,
       "recommended": true,
-      "target_gameweek": null,
+      "target_gameweek": 7,
       "reasoning": [
         "8 squad players trail the best available replacement in their position: Martinez, Tavernier, Wirtz, Bruno G., Dubravka, Elanga, White, Marc Guiu.",
         "Fixing them via normal transfers would cost 28 points in Hits with 1 free transfer(s) banked; Wildcard fixes them all for free."
-      ]
+      ],
+      "plan": {
+        "chip": "wildcard",
+        "target_gameweek": 7,
+        "horizon_gws": 3,
+        "transfer_count": 11,
+        "bank_before": 2.4,
+        "bank_after": 0.0,
+        "projected_point_gain": 117.9,
+        "transfers": [
+          {
+            "player_out": {
+              "player_id": 419,
+              "web_name": "Martinez",
+              "position": "DEF"
+            },
+            "player_in": {
+              "player_id": 115,
+              "web_name": "De Cuyper",
+              "position": "DEF"
+            },
+            "sell_price": 4.9,
+            "buy_price": 5.1,
+            "projected_point_gain": 17.9,
+            "rationale": [
+              "Martinez projects 3.8 pts over the next 3 gameweeks; De Cuyper projects 21.7.",
+              "De Cuyper's fixtures over the next 3 gameweeks: difficulty 2, 4, 5."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 25,
+              "web_name": "Gy\u00f6keres",
+              "position": "FWD"
+            },
+            "player_in": {
+              "player_id": 165,
+              "web_name": "Jo\u00e3o Pedro",
+              "position": "FWD"
+            },
+            "sell_price": 7.1,
+            "buy_price": 7.8,
+            "projected_point_gain": 17.3,
+            "rationale": [
+              "Gy\u00f6keres projects 0.9 pts over the next 3 gameweeks; Jo\u00e3o Pedro projects 18.2.",
+              "Jo\u00e3o Pedro's fixtures over the next 3 gameweeks: difficulty 3, 2, 4."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 497,
+              "web_name": "Dubravka",
+              "position": "GK"
+            },
+            "player_in": {
+              "player_id": 109,
+              "web_name": "Verbruggen",
+              "position": "GK"
+            },
+            "sell_price": 4.0,
+            "buy_price": 4.6,
+            "projected_point_gain": 14.7,
+            "rationale": [
+              "Dubravka projects 0.0 pts over the next 3 gameweeks; Verbruggen projects 14.7.",
+              "Verbruggen's fixtures over the next 3 gameweeks: difficulty 2, 4, 5."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 168,
+              "web_name": "Marc Guiu",
+              "position": "FWD"
+            },
+            "player_in": {
+              "player_id": 552,
+              "web_name": "Brobbey",
+              "position": "FWD"
+            },
+            "sell_price": 5.0,
+            "buy_price": 5.7,
+            "projected_point_gain": 13.5,
+            "rationale": [
+              "Marc Guiu projects 0.0 pts over the next 3 gameweeks; Brobbey projects 13.5.",
+              "Brobbey's fixtures over the next 3 gameweeks: difficulty 3, 3, 2."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 452,
+              "web_name": "Bruno G.",
+              "position": "MID"
+            },
+            "player_in": {
+              "player_id": 45,
+              "web_name": "McGinn",
+              "position": "MID"
+            },
+            "sell_price": 6.7,
+            "buy_price": 5.4,
+            "projected_point_gain": 10.2,
+            "rationale": [
+              "Bruno G. projects 5.1 pts over the next 3 gameweeks; McGinn projects 15.3.",
+              "McGinn's fixtures over the next 3 gameweeks: difficulty 3, 4, 2."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 60,
+              "web_name": "Hill",
+              "position": "DEF"
+            },
+            "player_in": {
+              "player_id": 229,
+              "web_name": "Tarkowski",
+              "position": "DEF"
+            },
+            "sell_price": 5.5,
+            "buy_price": 6.2,
+            "projected_point_gain": 11.0,
+            "rationale": [
+              "Hill projects 6.1 pts over the next 3 gameweeks; Tarkowski projects 17.1.",
+              "Tarkowski's fixtures over the next 3 gameweeks: difficulty 4, 5, 3."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 366,
+              "web_name": "Wirtz",
+              "position": "MID"
+            },
+            "player_in": {
+              "player_id": 428,
+              "web_name": "Cunha",
+              "position": "MID"
+            },
+            "sell_price": 7.3,
+            "buy_price": 7.9,
+            "projected_point_gain": 8.1,
+            "rationale": [
+              "Wirtz projects 8.5 pts over the next 3 gameweeks; Cunha projects 16.6.",
+              "Cunha's fixtures over the next 3 gameweeks: difficulty 3, 3, 4."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 10,
+              "web_name": "White",
+              "position": "DEF"
+            },
+            "player_in": {
+              "player_id": 176,
+              "web_name": "Dasilva",
+              "position": "DEF"
+            },
+            "sell_price": 5.4,
+            "buy_price": 4.0,
+            "projected_point_gain": 8.1,
+            "rationale": [
+              "White projects 6.7 pts over the next 3 gameweeks; Dasilva projects 14.7.",
+              "Dasilva's fixtures over the next 3 gameweeks: difficulty 3, 2, 3."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 454,
+              "web_name": "Elanga",
+              "position": "MID"
+            },
+            "player_in": {
+              "player_id": 41,
+              "web_name": "Buend\u00eda",
+              "position": "MID"
+            },
+            "sell_price": 6.0,
+            "buy_price": 5.9,
+            "projected_point_gain": 7.7,
+            "rationale": [
+              "Elanga projects 5.4 pts over the next 3 gameweeks; Buend\u00eda projects 13.0.",
+              "Buend\u00eda's fixtures over the next 3 gameweeks: difficulty 3, 4, 2."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 412,
+              "web_name": "Lammens",
+              "position": "GK"
+            },
+            "player_in": {
+              "player_id": 1,
+              "web_name": "Raya",
+              "position": "GK"
+            },
+            "sell_price": 4.9,
+            "buy_price": 6.1,
+            "projected_point_gain": 7.4,
+            "rationale": [
+              "Lammens projects 5.9 pts over the next 3 gameweeks; Raya projects 13.3.",
+              "Raya's fixtures over the next 3 gameweeks: difficulty 3, 3, 4."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 68,
+              "web_name": "Tavernier",
+              "position": "MID"
+            },
+            "player_in": {
+              "player_id": 236,
+              "web_name": "Dewsbury-Hall",
+              "position": "MID"
+            },
+            "sell_price": 6.1,
+            "buy_price": 6.6,
+            "projected_point_gain": 2.0,
+            "rationale": [
+              "Tavernier projects 10.4 pts over the next 3 gameweeks; Dewsbury-Hall projects 12.4.",
+              "Dewsbury-Hall's fixtures over the next 3 gameweeks: difficulty 4, 5, 3."
+            ]
+          }
+        ]
+      }
     },
     {
       "chip": "freehit",
@@ -1089,7 +1309,8 @@
       "target_gameweek": null,
       "reasoning": [
         "No blank gameweek hits 3+ of your squad's clubs in the next 8 gameweeks -- save it."
-      ]
+      ],
+      "plan": null
     }
   ],
   "meta": {

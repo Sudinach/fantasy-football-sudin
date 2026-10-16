@@ -12,11 +12,12 @@ treatment.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 
 import requests
 
 from fpl_analysis.chip_advice import free_hit_advice, wildcard_advice
+from fpl_analysis.chip_plan import free_hit_plan, wildcard_plan
 from fpl_analysis.chips import chip_status_for_manager, chip_windows_from_bootstrap, relevant_status
 from fpl_analysis.consistency import compute_consistency
 from fpl_analysis.defcon import defcon_hit_rate
@@ -203,21 +204,50 @@ def run(entry_id: int, client: FplClient | None = None) -> AnalysisResult:
 
     chip_windows = chip_windows_from_bootstrap(bootstrap_static)
     chip_statuses = chip_status_for_manager(chip_windows, transfer_activity, current_gw)
-    chip_advice = [
-        wildcard_advice(
-            squad=squad_analysis,
-            candidate_pool=candidate_analysis,
-            scores=quality_scores,
-            free_transfers=free_transfers,
-            status=relevant_status(chip_statuses, "wildcard", current_gw),
-        ),
-        free_hit_advice(
-            squad_club_ids=[p.club_id for p in squad],
-            fixtures=fixtures,
-            current_gw=current_gw,
-            status=relevant_status(chip_statuses, "freehit", current_gw),
-        ),
-    ]
+
+    # A chip is only worth planning transfers for once it's actually been
+    # recommended -- the plan is the expensive half (a greedy squad rebuild),
+    # and advice the manager is told to ignore doesn't need one.
+    wildcard = wildcard_advice(
+        squad=squad_analysis,
+        candidate_pool=candidate_analysis,
+        scores=quality_scores,
+        free_transfers=free_transfers,
+        status=relevant_status(chip_statuses, "wildcard", current_gw),
+        target_gameweek=current_gw + 1,
+    )
+    if wildcard.recommended:
+        wildcard = replace(
+            wildcard,
+            plan=wildcard_plan(
+                squad=squad_analysis,
+                candidate_pool=candidate_analysis,
+                bank=latest_gw_state["bank"],
+                bought_prices=bought_prices,
+                target_gameweek=wildcard.target_gameweek,
+            ),
+        )
+
+    free_hit = free_hit_advice(
+        squad_club_ids=[p.club_id for p in squad],
+        fixtures=fixtures,
+        current_gw=current_gw,
+        status=relevant_status(chip_statuses, "freehit", current_gw),
+    )
+    if free_hit.recommended:
+        free_hit = replace(
+            free_hit,
+            plan=free_hit_plan(
+                squad=squad_analysis,
+                candidate_pool=candidate_analysis,
+                bank=latest_gw_state["bank"],
+                bought_prices=bought_prices,
+                fixtures=fixtures,
+                target_gameweek=free_hit.target_gameweek,
+            ),
+        )
+
+    chip_advice = [wildcard, free_hit]
 
     current_event = next(e for e in bootstrap_static["events"] if e["id"] == current_gw)
     teams = {t["id"]: t["name"] for t in bootstrap_static["teams"]}

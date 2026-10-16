@@ -1,6 +1,6 @@
 from conftest import load_fixture
 
-from fpl_analysis.fixtures import fixture_ease_multiplier, next_n_fixtures
+from fpl_analysis.fixtures import fixture_ease_multiplier, fixtures_in_event, next_n_fixtures
 
 
 def _fixture(event, team_h, team_a, team_h_difficulty=3, team_a_difficulty=3):
@@ -80,3 +80,29 @@ def test_against_real_recorded_fixtures():
 
     assert len(result) >= 3
     assert all(1 <= f.difficulty <= 5 for f in result)
+
+
+def test_fixtures_in_event_pins_to_one_gameweek():
+    fixtures = [
+        _fixture(6, team_h=1, team_a=2),
+        _fixture(7, team_h=1, team_a=3),
+    ]
+
+    assert [f.event for f in fixtures_in_event(fixtures, club_id=1, event=6)] == [6]
+
+
+def test_fixtures_in_event_is_empty_for_a_blank_gameweek():
+    fixtures = [_fixture(6, team_h=1, team_a=2)]
+
+    assert fixtures_in_event(fixtures, club_id=3, event=6) == []
+
+
+def test_fixtures_in_event_returns_both_legs_of_a_double_gameweek():
+    fixtures = [
+        _fixture(6, team_h=1, team_a=2),
+        _fixture(6, team_h=3, team_a=1),
+    ]
+
+    result = fixtures_in_event(fixtures, club_id=1, event=6)
+
+    assert [(f.is_home, f.opponent_club_id) for f in result] == [(True, 2), (False, 3)]

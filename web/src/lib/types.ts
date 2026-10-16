@@ -58,12 +58,35 @@ const SuggestionSchema = z.object({
   options: z.array(BuyOptionSchema),
 });
 
+const PlannedTransferSchema = z.object({
+  player_out: PlayerRefSchema,
+  player_in: PlayerRefSchema,
+  sell_price: z.number(),
+  buy_price: z.number(),
+  projected_point_gain: z.number(),
+  rationale: z.array(z.string()),
+});
+
+const ChipPlanSchema = z.object({
+  chip: z.enum(["wildcard", "freehit"]),
+  target_gameweek: z.number(),
+  horizon_gws: z.number(),
+  transfer_count: z.number(),
+  bank_before: z.number(),
+  bank_after: z.number(),
+  projected_point_gain: z.number(),
+  transfers: z.array(PlannedTransferSchema),
+});
+
 const ChipAdviceSchema = z.object({
   chip: z.enum(["wildcard", "freehit"]),
   is_available: z.boolean(),
   recommended: z.boolean(),
   target_gameweek: z.number().nullable(),
   reasoning: z.array(z.string()),
+  // Only built for a recommended chip -- optional as well as nullable so
+  // snapshots archived before chip plans existed still parse.
+  plan: ChipPlanSchema.nullish(),
 });
 
 export const SnapshotSchema = z.object({
@@ -105,3 +128,5 @@ export type SquadPlayer = z.infer<typeof SquadPlayerSchema>;
 export type Suggestion = z.infer<typeof SuggestionSchema>;
 export type BuyOption = z.infer<typeof BuyOptionSchema>;
 export type ChipAdvice = z.infer<typeof ChipAdviceSchema>;
+export type ChipPlan = z.infer<typeof ChipPlanSchema>;
+export type PlannedTransfer = z.infer<typeof PlannedTransferSchema>;
