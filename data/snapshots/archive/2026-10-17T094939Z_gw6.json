@@ -1,0 +1,1309 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-17T09:49:39Z",
+  "gameweek": {
+    "current": 6,
+    "next_deadline": "2026-10-17T10:00:00Z",
+    "is_current_gw_finished": true
+  },
+  "manager": {
+    "entry_id": 677035,
+    "team_name": "theRedFreakingDevils",
+    "manager_name": "Sudin Acharya",
+    "overall_rank": 9782503,
+    "total_points": 239,
+    "bank": 2.4,
+    "team_value": 98.6,
+    "free_transfers_available": 1
+  },
+  "squad": [
+    {
+      "player_id": 412,
+      "web_name": "Lammens",
+      "club": "Man Utd",
+      "club_id": 16,
+      "position": "GK",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": true,
+      "now_cost": 4.9,
+      "bought_price": 4.9,
+      "sell_price": 4.9,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 13,
+      "recent_gw_points": [
+        2,
+        2,
+        2,
+        4,
+        2
+      ],
+      "trend": 1.74,
+      "consistency": 0.53,
+      "defcon_hit_rate": null,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Leeds",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Bournemouth",
+          "is_home": true,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Chelsea",
+          "is_home": false,
+          "difficulty": 4
+        }
+      ],
+      "quality_score": 34.0
+    },
+    {
+      "player_id": 419,
+      "web_name": "Martinez",
+      "club": "Man Utd",
+      "club_id": 16,
+      "position": "DEF",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 4.9,
+      "bought_price": 4.9,
+      "sell_price": 4.9,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": 100,
+      "total_points_season": 9,
+      "recent_gw_points": [
+        1,
+        3,
+        2,
+        0,
+        3
+      ],
+      "trend": 1.03,
+      "consistency": 0.46,
+      "defcon_hit_rate": 0.4,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Leeds",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Bournemouth",
+          "is_home": true,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Chelsea",
+          "is_home": false,
+          "difficulty": 4
+        }
+      ],
+      "quality_score": 33.7
+    },
+    {
+      "player_id": 391,
+      "web_name": "Gvardiol",
+      "club": "Man City",
+      "club_id": 15,
+      "position": "DEF",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 5.8,
+      "bought_price": 5.7,
+      "sell_price": 5.7,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 41,
+      "recent_gw_points": [
+        5,
+        8,
+        11,
+        4,
+        4
+      ],
+      "trend": 4.5,
+      "consistency": 0.27,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Ipswich Town",
+          "is_home": true,
+          "difficulty": 2
+        },
+        {
+          "event": 8,
+          "opponent": "Aston Villa",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Brighton",
+          "is_home": true,
+          "difficulty": 3
+        }
+      ],
+      "quality_score": 47.3
+    },
+    {
+      "player_id": 388,
+      "web_name": "Gu\u00e9hi",
+      "club": "Man City",
+      "club_id": 15,
+      "position": "DEF",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 6.0,
+      "bought_price": 6.0,
+      "sell_price": 6.0,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 36,
+      "recent_gw_points": [
+        2,
+        8,
+        6,
+        4,
+        6
+      ],
+      "trend": 4.27,
+      "consistency": 0.28,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Ipswich Town",
+          "is_home": true,
+          "difficulty": 2
+        },
+        {
+          "event": 8,
+          "opponent": "Aston Villa",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Brighton",
+          "is_home": true,
+          "difficulty": 3
+        }
+      ],
+      "quality_score": 47.2
+    },
+    {
+      "player_id": 60,
+      "web_name": "Hill",
+      "club": "Bournemouth",
+      "club_id": 3,
+      "position": "DEF",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 5.5,
+      "bought_price": 5.5,
+      "sell_price": 5.5,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 14,
+      "recent_gw_points": [
+        4,
+        1,
+        2,
+        4,
+        2
+      ],
+      "trend": 1.68,
+      "consistency": 0.44,
+      "defcon_hit_rate": 0.67,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Sunderland",
+          "is_home": true,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Man Utd",
+          "is_home": false,
+          "difficulty": 4
+        },
+        {
+          "event": 9,
+          "opponent": "Leeds",
+          "is_home": true,
+          "difficulty": 3
+        }
+      ],
+      "quality_score": 40.6
+    },
+    {
+      "player_id": 68,
+      "web_name": "Tavernier",
+      "club": "Bournemouth",
+      "club_id": 3,
+      "position": "MID",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 6.1,
+      "bought_price": 6.1,
+      "sell_price": 6.1,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 32,
+      "recent_gw_points": [
+        1,
+        10,
+        8,
+        2,
+        1
+      ],
+      "trend": 2.93,
+      "consistency": 0.2,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Sunderland",
+          "is_home": true,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Man Utd",
+          "is_home": false,
+          "difficulty": 4
+        },
+        {
+          "event": 9,
+          "opponent": "Leeds",
+          "is_home": true,
+          "difficulty": 3
+        }
+      ],
+      "quality_score": 31.1
+    },
+    {
+      "player_id": 124,
+      "web_name": "Gro\u00df",
+      "club": "Brighton",
+      "club_id": 5,
+      "position": "MID",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 6.1,
+      "bought_price": 5.8,
+      "sell_price": 5.9,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 53,
+      "recent_gw_points": [
+        13,
+        1,
+        17,
+        14,
+        6
+      ],
+      "trend": 7.54,
+      "consistency": 0.14,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Crystal Palace",
+          "is_home": true,
+          "difficulty": 2
+        },
+        {
+          "event": 8,
+          "opponent": "Liverpool",
+          "is_home": false,
+          "difficulty": 4
+        },
+        {
+          "event": 9,
+          "opponent": "Man City",
+          "is_home": false,
+          "difficulty": 5
+        }
+      ],
+      "quality_score": 46.5
+    },
+    {
+      "player_id": 366,
+      "web_name": "Wirtz",
+      "club": "Liverpool",
+      "club_id": 14,
+      "position": "MID",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 7.2,
+      "bought_price": 7.2,
+      "sell_price": 7.2,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 20,
+      "recent_gw_points": [
+        4,
+        3,
+        3,
+        6,
+        2
+      ],
+      "trend": 2.37,
+      "consistency": 0.42,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Brentford",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Brighton",
+          "is_home": true,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Arsenal",
+          "is_home": true,
+          "difficulty": 4
+        }
+      ],
+      "quality_score": 34.2
+    },
+    {
+      "player_id": 452,
+      "web_name": "Bruno G.",
+      "club": "Arsenal",
+      "club_id": 1,
+      "position": "MID",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 6.7,
+      "bought_price": 6.7,
+      "sell_price": 6.7,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": 100,
+      "total_points_season": 18,
+      "recent_gw_points": [
+        1,
+        0,
+        7,
+        1,
+        9
+      ],
+      "trend": 2.81,
+      "consistency": 0.22,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Nott'm Forest",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Everton",
+          "is_home": true,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Liverpool",
+          "is_home": false,
+          "difficulty": 4
+        }
+      ],
+      "quality_score": 26.1
+    },
+    {
+      "player_id": 25,
+      "web_name": "Gy\u00f6keres",
+      "club": "Arsenal",
+      "club_id": 1,
+      "position": "FWD",
+      "squad_role": "starting",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 7.1,
+      "bought_price": 7.1,
+      "sell_price": 7.1,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 3,
+      "recent_gw_points": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "trend": 0.7,
+      "consistency": 1.0,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Nott'm Forest",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Everton",
+          "is_home": true,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Liverpool",
+          "is_home": false,
+          "difficulty": 4
+        }
+      ],
+      "quality_score": 36.2
+    },
+    {
+      "player_id": 411,
+      "web_name": "Haaland",
+      "club": "Man City",
+      "club_id": 15,
+      "position": "FWD",
+      "squad_role": "starting",
+      "is_captain": true,
+      "is_vice_captain": false,
+      "now_cost": 15.7,
+      "bought_price": 15.6,
+      "sell_price": 15.6,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 45,
+      "recent_gw_points": [
+        13,
+        9,
+        9,
+        6,
+        6
+      ],
+      "trend": 4.0,
+      "consistency": 0.23,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Ipswich Town",
+          "is_home": true,
+          "difficulty": 2
+        },
+        {
+          "event": 8,
+          "opponent": "Aston Villa",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Brighton",
+          "is_home": true,
+          "difficulty": 3
+        }
+      ],
+      "quality_score": 44.7
+    },
+    {
+      "player_id": 497,
+      "web_name": "Dubravka",
+      "club": "Spurs",
+      "club_id": 19,
+      "position": "GK",
+      "squad_role": "bench",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 4.0,
+      "bought_price": 4.0,
+      "sell_price": 4.0,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": null,
+      "total_points_season": 0,
+      "recent_gw_points": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trend": null,
+      "consistency": null,
+      "defcon_hit_rate": null,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Coventry City",
+          "is_home": true,
+          "difficulty": 2
+        },
+        {
+          "event": 8,
+          "opponent": "Chelsea",
+          "is_home": false,
+          "difficulty": 4
+        },
+        {
+          "event": 9,
+          "opponent": "Crystal Palace",
+          "is_home": true,
+          "difficulty": 2
+        }
+      ],
+      "quality_score": 16.0
+    },
+    {
+      "player_id": 454,
+      "web_name": "Elanga",
+      "club": "Newcastle",
+      "club_id": 17,
+      "position": "MID",
+      "squad_role": "bench",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 6.0,
+      "bought_price": 6.0,
+      "sell_price": 6.0,
+      "status": "injured",
+      "news": "Unspecified injury - Expected back 25 Oct",
+      "chance_of_playing_next_round": 0,
+      "total_points_season": 18,
+      "recent_gw_points": [
+        8,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trend": 3.58,
+      "consistency": 0.22,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Aston Villa",
+          "is_home": true,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Crystal Palace",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Everton",
+          "is_home": true,
+          "difficulty": 3
+        }
+      ],
+      "quality_score": 36.1
+    },
+    {
+      "player_id": 10,
+      "web_name": "White",
+      "club": "Arsenal",
+      "club_id": 1,
+      "position": "DEF",
+      "squad_role": "bench",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 5.4,
+      "bought_price": 5.5,
+      "sell_price": 5.4,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": 100,
+      "total_points_season": 26,
+      "recent_gw_points": [
+        7,
+        2,
+        1,
+        0,
+        5
+      ],
+      "trend": 2.52,
+      "consistency": 0.22,
+      "defcon_hit_rate": 0.0,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Nott'm Forest",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Everton",
+          "is_home": true,
+          "difficulty": 3
+        },
+        {
+          "event": 9,
+          "opponent": "Liverpool",
+          "is_home": false,
+          "difficulty": 4
+        }
+      ],
+      "quality_score": 28.1
+    },
+    {
+      "player_id": 168,
+      "web_name": "Marc Guiu",
+      "club": "Chelsea",
+      "club_id": 6,
+      "position": "FWD",
+      "squad_role": "bench",
+      "is_captain": false,
+      "is_vice_captain": false,
+      "now_cost": 5.0,
+      "bought_price": 5.0,
+      "sell_price": 5.0,
+      "status": "unavailable",
+      "news": "Has joined RB Leipzig permanently",
+      "chance_of_playing_next_round": 0,
+      "total_points_season": 0,
+      "recent_gw_points": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trend": null,
+      "consistency": null,
+      "defcon_hit_rate": null,
+      "fixture_difficulty_next_3": [
+        {
+          "event": 7,
+          "opponent": "Everton",
+          "is_home": false,
+          "difficulty": 3
+        },
+        {
+          "event": 8,
+          "opponent": "Spurs",
+          "is_home": true,
+          "difficulty": 2
+        },
+        {
+          "event": 9,
+          "opponent": "Man Utd",
+          "is_home": true,
+          "difficulty": 4
+        }
+      ],
+      "quality_score": 12.0
+    }
+  ],
+  "points_trend": {
+    "by_gameweek": [
+      {
+        "event": 1,
+        "points": 31,
+        "overall_rank": 8411328
+      },
+      {
+        "event": 2,
+        "points": 70,
+        "overall_rank": 7975773
+      },
+      {
+        "event": 3,
+        "points": 25,
+        "overall_rank": 9056863
+      },
+      {
+        "event": 4,
+        "points": 47,
+        "overall_rank": 9338134
+      },
+      {
+        "event": 5,
+        "points": 26,
+        "overall_rank": 9635901
+      },
+      {
+        "event": 6,
+        "points": 48,
+        "overall_rank": 9782806
+      }
+    ]
+  },
+  "suggestions": [
+    {
+      "id": "gw6-001",
+      "player_out": {
+        "player_id": 419,
+        "web_name": "Martinez",
+        "position": "DEF"
+      },
+      "hit_cost": 0,
+      "free_transfers_available_at_suggestion": 1,
+      "options": [
+        {
+          "player_in": {
+            "player_id": 115,
+            "web_name": "De Cuyper",
+            "position": "DEF"
+          },
+          "cost_delta": 0.3,
+          "projected_point_gain": 21.0,
+          "net_projected_gain": 21.0,
+          "quality_score": 52.6,
+          "rationale": [
+            "Martinez's recent trend (1.0) trails De Cuyper's (8.9).",
+            "De Cuyper's next fixtures: difficulty 2, 4, 5.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 656,
+            "web_name": "Mfuni",
+            "position": "DEF"
+          },
+          "cost_delta": -0.9,
+          "projected_point_gain": 11.7,
+          "net_projected_gain": 11.7,
+          "quality_score": 55.3,
+          "rationale": [
+            "Martinez's recent trend (1.0) trails Mfuni's (4.7).",
+            "Mfuni's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 176,
+            "web_name": "Dasilva",
+            "position": "DEF"
+          },
+          "cost_delta": -0.9,
+          "projected_point_gain": 11.4,
+          "net_projected_gain": 11.4,
+          "quality_score": 45.6,
+          "rationale": [
+            "Martinez's recent trend (1.0) trails Dasilva's (4.6).",
+            "Dasilva's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gw6-002",
+      "player_out": {
+        "player_id": 366,
+        "web_name": "Wirtz",
+        "position": "MID"
+      },
+      "hit_cost": 0,
+      "free_transfers_available_at_suggestion": 1,
+      "options": [
+        {
+          "player_in": {
+            "player_id": 101,
+            "web_name": "Henderson",
+            "position": "MID"
+          },
+          "cost_delta": -2.3,
+          "projected_point_gain": 19.3,
+          "net_projected_gain": 19.3,
+          "quality_score": 55.6,
+          "rationale": [
+            "Wirtz's recent trend (2.4) trails Henderson's (8.7).",
+            "Henderson's next fixtures: difficulty 3, 2, 4.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 53,
+            "web_name": "Manzambi",
+            "position": "MID"
+          },
+          "cost_delta": -1.3,
+          "projected_point_gain": 8.8,
+          "net_projected_gain": 8.8,
+          "quality_score": 41.2,
+          "rationale": [
+            "Wirtz's recent trend (2.4) trails Manzambi's (5.2).",
+            "Manzambi's next fixtures: difficulty 3, 4, 2.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 45,
+            "web_name": "McGinn",
+            "position": "MID"
+          },
+          "cost_delta": -1.8,
+          "projected_point_gain": 8.3,
+          "net_projected_gain": 8.3,
+          "quality_score": 45.6,
+          "rationale": [
+            "Wirtz's recent trend (2.4) trails McGinn's (5.0).",
+            "McGinn's next fixtures: difficulty 3, 4, 2.",
+            "No hit required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gw6-003",
+      "player_out": {
+        "player_id": 60,
+        "web_name": "Hill",
+        "position": "DEF"
+      },
+      "hit_cost": 0,
+      "free_transfers_available_at_suggestion": 1,
+      "options": [
+        {
+          "player_in": {
+            "player_id": 115,
+            "web_name": "De Cuyper",
+            "position": "DEF"
+          },
+          "cost_delta": -0.3,
+          "projected_point_gain": 19.2,
+          "net_projected_gain": 19.2,
+          "quality_score": 52.6,
+          "rationale": [
+            "Hill's recent trend (1.7) trails De Cuyper's (8.9).",
+            "De Cuyper's next fixtures: difficulty 2, 4, 5.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 656,
+            "web_name": "Mfuni",
+            "position": "DEF"
+          },
+          "cost_delta": -1.5,
+          "projected_point_gain": 9.9,
+          "net_projected_gain": 9.9,
+          "quality_score": 55.3,
+          "rationale": [
+            "Hill's recent trend (1.7) trails Mfuni's (4.7).",
+            "Mfuni's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 176,
+            "web_name": "Dasilva",
+            "position": "DEF"
+          },
+          "cost_delta": -1.5,
+          "projected_point_gain": 9.5,
+          "net_projected_gain": 9.5,
+          "quality_score": 45.6,
+          "rationale": [
+            "Hill's recent trend (1.7) trails Dasilva's (4.6).",
+            "Dasilva's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gw6-004",
+      "player_out": {
+        "player_id": 452,
+        "web_name": "Bruno G.",
+        "position": "MID"
+      },
+      "hit_cost": 0,
+      "free_transfers_available_at_suggestion": 1,
+      "options": [
+        {
+          "player_in": {
+            "player_id": 101,
+            "web_name": "Henderson",
+            "position": "MID"
+          },
+          "cost_delta": -1.8,
+          "projected_point_gain": 18.1,
+          "net_projected_gain": 18.1,
+          "quality_score": 55.6,
+          "rationale": [
+            "Bruno G.'s recent trend (2.8) trails Henderson's (8.7).",
+            "Henderson's next fixtures: difficulty 3, 2, 4.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 53,
+            "web_name": "Manzambi",
+            "position": "MID"
+          },
+          "cost_delta": -0.8,
+          "projected_point_gain": 7.5,
+          "net_projected_gain": 7.5,
+          "quality_score": 41.2,
+          "rationale": [
+            "Bruno G.'s recent trend (2.8) trails Manzambi's (5.2).",
+            "Manzambi's next fixtures: difficulty 3, 4, 2.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 45,
+            "web_name": "McGinn",
+            "position": "MID"
+          },
+          "cost_delta": -1.3,
+          "projected_point_gain": 7.1,
+          "net_projected_gain": 7.1,
+          "quality_score": 45.6,
+          "rationale": [
+            "Bruno G.'s recent trend (2.8) trails McGinn's (5.0).",
+            "McGinn's next fixtures: difficulty 3, 4, 2.",
+            "No hit required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gw6-005",
+      "player_out": {
+        "player_id": 168,
+        "web_name": "Marc Guiu",
+        "position": "FWD"
+      },
+      "hit_cost": 0,
+      "free_transfers_available_at_suggestion": 1,
+      "options": [
+        {
+          "player_in": {
+            "player_id": 599,
+            "web_name": "Cherif",
+            "position": "FWD"
+          },
+          "cost_delta": 0.0,
+          "projected_point_gain": 18.0,
+          "net_projected_gain": 18.0,
+          "quality_score": 46.4,
+          "rationale": [
+            "Cherif's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 552,
+            "web_name": "Brobbey",
+            "position": "FWD"
+          },
+          "cost_delta": 0.7,
+          "projected_point_gain": 15.8,
+          "net_projected_gain": 15.8,
+          "quality_score": 46.3,
+          "rationale": [
+            "Brobbey's next fixtures: difficulty 3, 3, 2.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 138,
+            "web_name": "Kostoulas",
+            "position": "FWD"
+          },
+          "cost_delta": 0.7,
+          "projected_point_gain": 11.4,
+          "net_projected_gain": 11.4,
+          "quality_score": 31.5,
+          "rationale": [
+            "Kostoulas's next fixtures: difficulty 2, 4, 5.",
+            "No hit required."
+          ]
+        }
+      ]
+    }
+  ],
+  "chip_advice": [
+    {
+      "chip": "wildcard",
+      "is_available": true,
+      "recommended": true,
+      "target_gameweek": 7,
+      "reasoning": [
+        "8 squad players trail the best available replacement in their position: Martinez, Tavernier, Wirtz, Bruno G., Dubravka, Elanga, White, Marc Guiu.",
+        "Fixing them via normal transfers would cost 28 points in Hits with 1 free transfer(s) banked; Wildcard fixes them all for free."
+      ],
+      "plan": {
+        "chip": "wildcard",
+        "target_gameweek": 7,
+        "horizon_gws": 3,
+        "transfer_count": 10,
+        "bank_before": 2.4,
+        "bank_after": 0.3,
+        "projected_point_gain": 115.9,
+        "transfers": [
+          {
+            "player_out": {
+              "player_id": 419,
+              "web_name": "Martinez",
+              "position": "DEF"
+            },
+            "player_in": {
+              "player_id": 115,
+              "web_name": "De Cuyper",
+              "position": "DEF"
+            },
+            "sell_price": 4.9,
+            "buy_price": 5.2,
+            "projected_point_gain": 17.9,
+            "rationale": [
+              "Martinez projects 3.8 pts over the next 3 gameweeks; De Cuyper projects 21.7.",
+              "De Cuyper's fixtures over the next 3 gameweeks: difficulty 2, 4, 5."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 25,
+              "web_name": "Gy\u00f6keres",
+              "position": "FWD"
+            },
+            "player_in": {
+              "player_id": 165,
+              "web_name": "Jo\u00e3o Pedro",
+              "position": "FWD"
+            },
+            "sell_price": 7.1,
+            "buy_price": 7.8,
+            "projected_point_gain": 17.3,
+            "rationale": [
+              "Gy\u00f6keres projects 0.9 pts over the next 3 gameweeks; Jo\u00e3o Pedro projects 18.2.",
+              "Jo\u00e3o Pedro's fixtures over the next 3 gameweeks: difficulty 3, 2, 4."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 497,
+              "web_name": "Dubravka",
+              "position": "GK"
+            },
+            "player_in": {
+              "player_id": 109,
+              "web_name": "Verbruggen",
+              "position": "GK"
+            },
+            "sell_price": 4.0,
+            "buy_price": 4.6,
+            "projected_point_gain": 14.7,
+            "rationale": [
+              "Dubravka projects 0.0 pts over the next 3 gameweeks; Verbruggen projects 14.7.",
+              "Verbruggen's fixtures over the next 3 gameweeks: difficulty 2, 4, 5."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 168,
+              "web_name": "Marc Guiu",
+              "position": "FWD"
+            },
+            "player_in": {
+              "player_id": 552,
+              "web_name": "Brobbey",
+              "position": "FWD"
+            },
+            "sell_price": 5.0,
+            "buy_price": 5.7,
+            "projected_point_gain": 13.5,
+            "rationale": [
+              "Marc Guiu projects 0.0 pts over the next 3 gameweeks; Brobbey projects 13.5.",
+              "Brobbey's fixtures over the next 3 gameweeks: difficulty 3, 3, 2."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 452,
+              "web_name": "Bruno G.",
+              "position": "MID"
+            },
+            "player_in": {
+              "player_id": 45,
+              "web_name": "McGinn",
+              "position": "MID"
+            },
+            "sell_price": 6.7,
+            "buy_price": 5.4,
+            "projected_point_gain": 10.2,
+            "rationale": [
+              "Bruno G. projects 5.1 pts over the next 3 gameweeks; McGinn projects 15.3.",
+              "McGinn's fixtures over the next 3 gameweeks: difficulty 3, 4, 2."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 60,
+              "web_name": "Hill",
+              "position": "DEF"
+            },
+            "player_in": {
+              "player_id": 229,
+              "web_name": "Tarkowski",
+              "position": "DEF"
+            },
+            "sell_price": 5.5,
+            "buy_price": 6.2,
+            "projected_point_gain": 11.0,
+            "rationale": [
+              "Hill projects 6.1 pts over the next 3 gameweeks; Tarkowski projects 17.1.",
+              "Tarkowski's fixtures over the next 3 gameweeks: difficulty 4, 5, 3."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 366,
+              "web_name": "Wirtz",
+              "position": "MID"
+            },
+            "player_in": {
+              "player_id": 428,
+              "web_name": "Cunha",
+              "position": "MID"
+            },
+            "sell_price": 7.2,
+            "buy_price": 7.9,
+            "projected_point_gain": 8.1,
+            "rationale": [
+              "Wirtz projects 8.5 pts over the next 3 gameweeks; Cunha projects 16.6.",
+              "Cunha's fixtures over the next 3 gameweeks: difficulty 3, 3, 4."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 10,
+              "web_name": "White",
+              "position": "DEF"
+            },
+            "player_in": {
+              "player_id": 176,
+              "web_name": "Dasilva",
+              "position": "DEF"
+            },
+            "sell_price": 5.4,
+            "buy_price": 4.0,
+            "projected_point_gain": 8.1,
+            "rationale": [
+              "White projects 6.7 pts over the next 3 gameweeks; Dasilva projects 14.7.",
+              "Dasilva's fixtures over the next 3 gameweeks: difficulty 3, 2, 3."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 454,
+              "web_name": "Elanga",
+              "position": "MID"
+            },
+            "player_in": {
+              "player_id": 41,
+              "web_name": "Buend\u00eda",
+              "position": "MID"
+            },
+            "sell_price": 6.0,
+            "buy_price": 5.9,
+            "projected_point_gain": 7.7,
+            "rationale": [
+              "Elanga projects 5.4 pts over the next 3 gameweeks; Buend\u00eda projects 13.0.",
+              "Buend\u00eda's fixtures over the next 3 gameweeks: difficulty 3, 4, 2."
+            ]
+          },
+          {
+            "player_out": {
+              "player_id": 412,
+              "web_name": "Lammens",
+              "position": "GK"
+            },
+            "player_in": {
+              "player_id": 1,
+              "web_name": "Raya",
+              "position": "GK"
+            },
+            "sell_price": 4.9,
+            "buy_price": 6.1,
+            "projected_point_gain": 7.4,
+            "rationale": [
+              "Lammens projects 5.9 pts over the next 3 gameweeks; Raya projects 13.3.",
+              "Raya's fixtures over the next 3 gameweeks: difficulty 3, 3, 4."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "chip": "freehit",
+      "is_available": true,
+      "recommended": false,
+      "target_gameweek": null,
+      "reasoning": [
+        "No blank gameweek hits 3+ of your squad's clubs in the next 8 gameweeks -- save it."
+      ],
+      "plan": null
+    }
+  ],
+  "meta": {
+    "analysis_horizon_gws": 3,
+    "trend_window_gws": 8,
+    "scoring_weights": {
+      "trend": 0.4,
+      "consistency": 0.25,
+      "fixture_ease": 0.2,
+      "defcon_hit_rate": 0.1,
+      "minutes_reliability": 0.05
+    },
+    "source_data_as_of_event": 6
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-16T11:59:22Z",
+  "generated_at": "2026-10-17T09:49:39Z",
   "gameweek": {
     "current": 6,
     "next_deadline": "2026-10-17T10:00:00Z",
@@ -10,7 +10,7 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9782591,
+    "overall_rank": 9782503,
     "total_points": 239,
     "bank": 2.4,
     "team_value": 98.6,
@@ -314,7 +314,7 @@
       "squad_role": "starting",
       "is_captain": false,
       "is_vice_captain": false,
-      "now_cost": 6.0,
+      "now_cost": 6.1,
       "bought_price": 5.8,
       "sell_price": 5.9,
       "status": "available",
@@ -362,9 +362,9 @@
       "squad_role": "starting",
       "is_captain": false,
       "is_vice_captain": false,
-      "now_cost": 7.3,
-      "bought_price": 7.3,
-      "sell_price": 7.3,
+      "now_cost": 7.2,
+      "bought_price": 7.2,
+      "sell_price": 7.2,
       "status": "available",
       "news": "",
       "chance_of_playing_next_round": null,
@@ -506,7 +506,7 @@
       "squad_role": "starting",
       "is_captain": true,
       "is_vice_captain": false,
-      "now_cost": 15.6,
+      "now_cost": 15.7,
       "bought_price": 15.6,
       "sell_price": 15.6,
       "status": "available",
@@ -602,7 +602,7 @@
       "squad_role": "bench",
       "is_captain": false,
       "is_vice_captain": false,
-      "now_cost": 6.1,
+      "now_cost": 6.0,
       "bought_price": 6.0,
       "sell_price": 6.0,
       "status": "injured",
@@ -789,7 +789,7 @@
             "web_name": "De Cuyper",
             "position": "DEF"
           },
-          "cost_delta": 0.2,
+          "cost_delta": 0.3,
           "projected_point_gain": 21.0,
           "net_projected_gain": 21.0,
           "quality_score": 52.6,
@@ -849,7 +849,7 @@
             "web_name": "Henderson",
             "position": "MID"
           },
-          "cost_delta": -2.4,
+          "cost_delta": -2.3,
           "projected_point_gain": 19.3,
           "net_projected_gain": 19.3,
           "quality_score": 55.6,
@@ -865,7 +865,7 @@
             "web_name": "Manzambi",
             "position": "MID"
           },
-          "cost_delta": -1.4,
+          "cost_delta": -1.3,
           "projected_point_gain": 8.8,
           "net_projected_gain": 8.8,
           "quality_score": 41.2,
@@ -881,7 +881,7 @@
             "web_name": "McGinn",
             "position": "MID"
           },
-          "cost_delta": -1.9,
+          "cost_delta": -1.8,
           "projected_point_gain": 8.3,
           "net_projected_gain": 8.3,
           "quality_score": 45.6,
@@ -909,7 +909,7 @@
             "web_name": "De Cuyper",
             "position": "DEF"
           },
-          "cost_delta": -0.4,
+          "cost_delta": -0.3,
           "projected_point_gain": 19.2,
           "net_projected_gain": 19.2,
           "quality_score": 52.6,
@@ -1085,10 +1085,10 @@
         "chip": "wildcard",
         "target_gameweek": 7,
         "horizon_gws": 3,
-        "transfer_count": 11,
+        "transfer_count": 10,
         "bank_before": 2.4,
-        "bank_after": 0.0,
-        "projected_point_gain": 117.9,
+        "bank_after": 0.3,
+        "projected_point_gain": 115.9,
         "transfers": [
           {
             "player_out": {
@@ -1102,7 +1102,7 @@
               "position": "DEF"
             },
             "sell_price": 4.9,
-            "buy_price": 5.1,
+            "buy_price": 5.2,
             "projected_point_gain": 17.9,
             "rationale": [
               "Martinez projects 3.8 pts over the next 3 gameweeks; De Cuyper projects 21.7.",
@@ -1215,7 +1215,7 @@
               "web_name": "Cunha",
               "position": "MID"
             },
-            "sell_price": 7.3,
+            "sell_price": 7.2,
             "buy_price": 7.9,
             "projected_point_gain": 8.1,
             "rationale": [
@@ -1278,25 +1278,6 @@
             "rationale": [
               "Lammens projects 5.9 pts over the next 3 gameweeks; Raya projects 13.3.",
               "Raya's fixtures over the next 3 gameweeks: difficulty 3, 3, 4."
-            ]
-          },
-          {
-            "player_out": {
-              "player_id": 68,
-              "web_name": "Tavernier",
-              "position": "MID"
-            },
-            "player_in": {
-              "player_id": 236,
-              "web_name": "Dewsbury-Hall",
-              "position": "MID"
-            },
-            "sell_price": 6.1,
-            "buy_price": 6.6,
-            "projected_point_gain": 2.0,
-            "rationale": [
-              "Tavernier projects 10.4 pts over the next 3 gameweeks; Dewsbury-Hall projects 12.4.",
-              "Dewsbury-Hall's fixtures over the next 3 gameweeks: difficulty 4, 5, 3."
             ]
           }
         ]
