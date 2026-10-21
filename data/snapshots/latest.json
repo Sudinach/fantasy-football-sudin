@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T10:32:01Z",
+  "generated_at": "2026-10-21T10:44:50Z",
   "gameweek": {
     "current": 7,
     "next_deadline": "2026-10-23T17:30:00Z",
-    "is_current_gw_finished": false
+    "is_current_gw_finished": true
   },
   "manager": {
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9654862,
+    "overall_rank": 9720906,
     "total_points": 292,
     "bank": 0.0,
     "team_value": 99.0,
@@ -509,9 +509,9 @@
       "now_cost": 15.7,
       "bought_price": 15.6,
       "sell_price": 15.6,
-      "status": "doubtful",
-      "news": "Unspecified injury - 75% chance of playing",
-      "chance_of_playing_next_round": 75,
+      "status": "available",
+      "news": "",
+      "chance_of_playing_next_round": 100,
       "total_points_season": 58,
       "recent_gw_points": [
         9,
@@ -773,7 +773,7 @@
       {
         "event": 7,
         "points": 53,
-        "overall_rank": 9654862
+        "overall_rank": 9720980
       }
     ]
   },
@@ -1046,22 +1046,6 @@
         },
         {
           "player_in": {
-            "player_id": 332,
-            "web_name": "Justin",
-            "position": "DEF"
-          },
-          "cost_delta": -1.2,
-          "projected_point_gain": 2.3,
-          "net_projected_gain": 2.3,
-          "quality_score": 47.3,
-          "rationale": [
-            "Gvardiol's recent trend (3.0) trails Justin's (3.6).",
-            "Justin's next fixtures: difficulty 3, 3, 2.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
             "player_id": 304,
             "web_name": "O'Shea",
             "position": "DEF"
@@ -1073,6 +1057,22 @@
           "rationale": [
             "Gvardiol's recent trend (3.0) trails O'Shea's (3.4).",
             "O'Shea's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 10,
+            "web_name": "White",
+            "position": "DEF"
+          },
+          "cost_delta": -0.3,
+          "projected_point_gain": 1.8,
+          "net_projected_gain": 1.8,
+          "quality_score": 36.5,
+          "rationale": [
+            "Gvardiol's recent trend (3.0) trails White's (3.6).",
+            "White's next fixtures: difficulty 3, 4, 2.",
             "No hit required."
           ]
         }
