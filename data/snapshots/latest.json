@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T09:55:19Z",
+  "generated_at": "2026-10-24T11:42:14Z",
   "gameweek": {
     "current": 8,
     "next_deadline": "2026-10-31T11:00:00Z",
@@ -10,8 +10,8 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9721529,
-    "total_points": 292,
+    "overall_rank": 9693540,
+    "total_points": 296,
     "bank": 1.0,
     "team_value": 99.3,
     "free_transfers_available": 1
@@ -128,16 +128,16 @@
       "status": "available",
       "news": "",
       "chance_of_playing_next_round": null,
-      "total_points_season": 41,
+      "total_points_season": 42,
       "recent_gw_points": [
         11,
         4,
         4,
         0,
-        0
+        1
       ],
-      "trend": 2.96,
-      "consistency": 0.23,
+      "trend": 1.26,
+      "consistency": 0.22,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
         {
@@ -159,7 +159,7 @@
           "difficulty": 2
         }
       ],
-      "quality_score": 34.0
+      "quality_score": 23.5
     },
     {
       "player_id": 388,
@@ -176,16 +176,16 @@
       "status": "available",
       "news": "",
       "chance_of_playing_next_round": null,
-      "total_points_season": 37,
+      "total_points_season": 38,
       "recent_gw_points": [
         6,
         4,
         6,
         1,
-        0
+        1
       ],
-      "trend": 3.07,
-      "consistency": 0.25,
+      "trend": 2.05,
+      "consistency": 0.24,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
         {
@@ -207,7 +207,7 @@
           "difficulty": 2
         }
       ],
-      "quality_score": 37.1
+      "quality_score": 30.6
     },
     {
       "player_id": 229,
@@ -512,16 +512,16 @@
       "status": "available",
       "news": "",
       "chance_of_playing_next_round": 100,
-      "total_points_season": 58,
+      "total_points_season": 59,
       "recent_gw_points": [
         9,
         6,
         6,
         13,
-        0
+        1
       ],
-      "trend": 5.52,
-      "consistency": 0.21,
+      "trend": 3.81,
+      "consistency": 0.19,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
         {
@@ -543,7 +543,7 @@
           "difficulty": 2
         }
       ],
-      "quality_score": 50.1
+      "quality_score": 38.9
     },
     {
       "player_id": 109,
@@ -608,16 +608,16 @@
       "status": "available",
       "news": "",
       "chance_of_playing_next_round": null,
-      "total_points_season": 28,
+      "total_points_season": 32,
       "recent_gw_points": [
         6,
         6,
         10,
         1,
-        0
+        4
       ],
-      "trend": 3.96,
-      "consistency": 0.24,
+      "trend": 3.5,
+      "consistency": 0.25,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
         {
@@ -639,7 +639,7 @@
           "difficulty": 3
         }
       ],
-      "quality_score": 36.2
+      "quality_score": 34.0
     },
     {
       "player_id": 176,
@@ -786,6 +786,186 @@
     {
       "id": "gw8-001",
       "player_out": {
+        "player_id": 391,
+        "web_name": "Gvardiol",
+        "position": "DEF"
+      },
+      "hit_cost": 0,
+      "free_transfers_available_at_suggestion": 1,
+      "options": [
+        {
+          "player_in": {
+            "player_id": 8,
+            "web_name": "Calafiori",
+            "position": "DEF"
+          },
+          "cost_delta": 0.3,
+          "projected_point_gain": 8.0,
+          "net_projected_gain": 8.0,
+          "quality_score": 36.5,
+          "rationale": [
+            "Gvardiol's recent trend (1.3) trails Calafiori's (4.0).",
+            "Calafiori's next fixtures: difficulty 4, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 257,
+            "web_name": "Bassey",
+            "position": "DEF"
+          },
+          "cost_delta": -1.2,
+          "projected_point_gain": 6.8,
+          "net_projected_gain": 6.8,
+          "quality_score": 32.0,
+          "rationale": [
+            "Gvardiol's recent trend (1.3) trails Bassey's (4.0).",
+            "Bassey's next fixtures: difficulty 3, 3, 5.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 10,
+            "web_name": "White",
+            "position": "DEF"
+          },
+          "cost_delta": -0.3,
+          "projected_point_gain": 6.7,
+          "net_projected_gain": 6.7,
+          "quality_score": 33.0,
+          "rationale": [
+            "Gvardiol's recent trend (1.3) trails White's (3.6).",
+            "White's next fixtures: difficulty 4, 2, 3.",
+            "No hit required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gw8-002",
+      "player_out": {
+        "player_id": 388,
+        "web_name": "Gu\u00e9hi",
+        "position": "DEF"
+      },
+      "hit_cost": 0,
+      "free_transfers_available_at_suggestion": 1,
+      "options": [
+        {
+          "player_in": {
+            "player_id": 8,
+            "web_name": "Calafiori",
+            "position": "DEF"
+          },
+          "cost_delta": 0.0,
+          "projected_point_gain": 5.5,
+          "net_projected_gain": 5.5,
+          "quality_score": 36.5,
+          "rationale": [
+            "Gu\u00e9hi's recent trend (2.1) trails Calafiori's (4.0).",
+            "Calafiori's next fixtures: difficulty 4, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 257,
+            "web_name": "Bassey",
+            "position": "DEF"
+          },
+          "cost_delta": -1.5,
+          "projected_point_gain": 4.3,
+          "net_projected_gain": 4.3,
+          "quality_score": 32.0,
+          "rationale": [
+            "Gu\u00e9hi's recent trend (2.1) trails Bassey's (4.0).",
+            "Bassey's next fixtures: difficulty 3, 3, 5.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 10,
+            "web_name": "White",
+            "position": "DEF"
+          },
+          "cost_delta": -0.6,
+          "projected_point_gain": 4.2,
+          "net_projected_gain": 4.2,
+          "quality_score": 33.0,
+          "rationale": [
+            "Gu\u00e9hi's recent trend (2.1) trails White's (3.6).",
+            "White's next fixtures: difficulty 4, 2, 3.",
+            "No hit required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gw8-003",
+      "player_out": {
+        "player_id": 411,
+        "web_name": "Haaland",
+        "position": "FWD"
+      },
+      "hit_cost": 0,
+      "free_transfers_available_at_suggestion": 1,
+      "options": [
+        {
+          "player_in": {
+            "player_id": 79,
+            "web_name": "Evanilson",
+            "position": "FWD"
+          },
+          "cost_delta": -9.4,
+          "projected_point_gain": 4.0,
+          "net_projected_gain": 4.0,
+          "quality_score": 48.5,
+          "rationale": [
+            "Haaland's recent trend (3.8) trails Evanilson's (5.1).",
+            "Evanilson's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 249,
+            "web_name": "Barry",
+            "position": "FWD"
+          },
+          "cost_delta": -9.9,
+          "projected_point_gain": -1.9,
+          "net_projected_gain": -1.9,
+          "quality_score": 39.7,
+          "rationale": [
+            "Haaland's recent trend (3.8) trails Barry's (3.2).",
+            "Barry's next fixtures: difficulty 3, 2, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 401,
+            "web_name": "Marmoush",
+            "position": "FWD"
+          },
+          "cost_delta": -8.6,
+          "projected_point_gain": -2.2,
+          "net_projected_gain": -2.2,
+          "quality_score": 41.0,
+          "rationale": [
+            "Haaland's recent trend (3.8) trails Marmoush's (3.0).",
+            "Marmoush's next fixtures: difficulty 2, 3, 2.",
+            "No hit required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gw8-004",
+      "player_out": {
         "player_id": 428,
         "web_name": "Cunha",
         "position": "MID"
@@ -844,67 +1024,7 @@
       ]
     },
     {
-      "id": "gw8-002",
-      "player_out": {
-        "player_id": 391,
-        "web_name": "Gvardiol",
-        "position": "DEF"
-      },
-      "hit_cost": 0,
-      "free_transfers_available_at_suggestion": 1,
-      "options": [
-        {
-          "player_in": {
-            "player_id": 8,
-            "web_name": "Calafiori",
-            "position": "DEF"
-          },
-          "cost_delta": 0.3,
-          "projected_point_gain": 2.7,
-          "net_projected_gain": 2.7,
-          "quality_score": 36.5,
-          "rationale": [
-            "Gvardiol's recent trend (3.0) trails Calafiori's (4.0).",
-            "Calafiori's next fixtures: difficulty 4, 2, 3.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 304,
-            "web_name": "O'Shea",
-            "position": "DEF"
-          },
-          "cost_delta": -1.7,
-          "projected_point_gain": 1.0,
-          "net_projected_gain": 1.0,
-          "quality_score": 43.7,
-          "rationale": [
-            "Gvardiol's recent trend (3.0) trails O'Shea's (3.3).",
-            "O'Shea's next fixtures: difficulty 2, 3, 3.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 592,
-            "web_name": "Ouattara",
-            "position": "DEF"
-          },
-          "cost_delta": -1.7,
-          "projected_point_gain": 0.1,
-          "net_projected_gain": 0.1,
-          "quality_score": 35.0,
-          "rationale": [
-            "Gvardiol's recent trend (3.0) trails Ouattara's (3.0).",
-            "Ouattara's next fixtures: difficulty 2, 3, 3.",
-            "No hit required."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "gw8-003",
+      "id": "gw8-005",
       "player_out": {
         "player_id": 45,
         "web_name": "McGinn",
@@ -920,11 +1040,11 @@
             "position": "MID"
           },
           "cost_delta": 0.9,
-          "projected_point_gain": 1.0,
-          "net_projected_gain": 1.0,
+          "projected_point_gain": 2.4,
+          "net_projected_gain": 2.4,
           "quality_score": 40.8,
           "rationale": [
-            "McGinn's recent trend (4.0) trails Tavernier's (4.1).",
+            "McGinn's recent trend (3.5) trails Tavernier's (4.1).",
             "Tavernier's next fixtures: difficulty 3, 2, 3.",
             "No hit required."
           ]
@@ -936,11 +1056,11 @@
             "position": "MID"
           },
           "cost_delta": -0.5,
-          "projected_point_gain": -0.2,
-          "net_projected_gain": -0.2,
+          "projected_point_gain": 1.1,
+          "net_projected_gain": 1.1,
           "quality_score": 45.2,
           "rationale": [
-            "McGinn's recent trend (4.0) trails Rudoni's (3.7).",
+            "McGinn's recent trend (3.5) trails Rudoni's (3.7).",
             "Rudoni's next fixtures: difficulty 3, 3, 2.",
             "No hit required."
           ]
@@ -952,116 +1072,12 @@
             "position": "MID"
           },
           "cost_delta": 0.1,
-          "projected_point_gain": -1.5,
-          "net_projected_gain": -1.5,
+          "projected_point_gain": -0.1,
+          "net_projected_gain": -0.1,
           "quality_score": 39.6,
           "rationale": [
-            "McGinn's recent trend (4.0) trails Enciso's (3.3).",
+            "McGinn's recent trend (3.5) trails Enciso's (3.3).",
             "Enciso's next fixtures: difficulty 2, 3, 3.",
-            "No hit required."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "gw8-004",
-      "player_out": {
-        "player_id": 552,
-        "web_name": "Brobbey",
-        "position": "FWD"
-      },
-      "hit_cost": 0,
-      "free_transfers_available_at_suggestion": 1,
-      "options": [
-        {
-          "player_in": {
-            "player_id": 79,
-            "web_name": "Evanilson",
-            "position": "FWD"
-          },
-          "cost_delta": 0.5,
-          "projected_point_gain": 0.9,
-          "net_projected_gain": 0.9,
-          "quality_score": 48.5,
-          "rationale": [
-            "Brobbey's recent trend (5.0) trails Evanilson's (5.1).",
-            "Evanilson's next fixtures: difficulty 3, 2, 3.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 249,
-            "web_name": "Barry",
-            "position": "FWD"
-          },
-          "cost_delta": 0.0,
-          "projected_point_gain": -5.0,
-          "net_projected_gain": -5.0,
-          "quality_score": 39.7,
-          "rationale": [
-            "Brobbey's recent trend (5.0) trails Barry's (3.2).",
-            "Barry's next fixtures: difficulty 3, 2, 3.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 526,
-            "web_name": "Solanke",
-            "position": "FWD"
-          },
-          "cost_delta": 0.1,
-          "projected_point_gain": -5.5,
-          "net_projected_gain": -5.5,
-          "quality_score": 42.4,
-          "rationale": [
-            "Brobbey's recent trend (5.0) trails Solanke's (2.9).",
-            "Solanke's next fixtures: difficulty 2, 3, 2.",
-            "No hit required."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "gw8-005",
-      "player_out": {
-        "player_id": 388,
-        "web_name": "Gu\u00e9hi",
-        "position": "DEF"
-      },
-      "hit_cost": 0,
-      "free_transfers_available_at_suggestion": 1,
-      "options": [
-        {
-          "player_in": {
-            "player_id": 304,
-            "web_name": "O'Shea",
-            "position": "DEF"
-          },
-          "cost_delta": -2.0,
-          "projected_point_gain": 0.7,
-          "net_projected_gain": 0.7,
-          "quality_score": 43.7,
-          "rationale": [
-            "Gu\u00e9hi's recent trend (3.1) trails O'Shea's (3.3).",
-            "O'Shea's next fixtures: difficulty 2, 3, 3.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 447,
-            "web_name": "Botman",
-            "position": "DEF"
-          },
-          "cost_delta": -1.0,
-          "projected_point_gain": -0.9,
-          "net_projected_gain": -0.9,
-          "quality_score": 40.1,
-          "rationale": [
-            "Gu\u00e9hi's recent trend (3.1) trails Botman's (3.1).",
-            "Botman's next fixtures: difficulty 3, 3, 4.",
             "No hit required."
           ]
         }
