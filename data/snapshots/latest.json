@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-26T11:43:16Z",
+  "generated_at": "2026-10-27T11:11:06Z",
   "gameweek": {
     "current": 8,
     "next_deadline": "2026-10-31T11:00:00Z",
-    "is_current_gw_finished": false
+    "is_current_gw_finished": true
   },
   "manager": {
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9770086,
+    "overall_rank": 9770006,
     "total_points": 330,
     "bank": 1.0,
     "team_value": 99.3,
@@ -74,7 +74,7 @@
       "squad_role": "starting",
       "is_captain": false,
       "is_vice_captain": false,
-      "now_cost": 5.8,
+      "now_cost": 5.7,
       "bought_price": 5.7,
       "sell_price": 5.7,
       "status": "available",
@@ -1039,7 +1039,7 @@
             "web_name": "Tavernier",
             "position": "MID"
           },
-          "cost_delta": -1.6,
+          "cost_delta": -1.5,
           "projected_point_gain": 6.2,
           "net_projected_gain": 6.2,
           "quality_score": 52.8,
