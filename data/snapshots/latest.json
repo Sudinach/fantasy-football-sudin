@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-01T12:11:10Z",
+  "generated_at": "2026-11-01T13:53:51Z",
   "gameweek": {
     "current": 9,
     "next_deadline": "2026-11-06T18:30:00Z",
@@ -10,7 +10,7 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9810518,
+    "overall_rank": 9810510,
     "total_points": 349,
     "bank": 1.0,
     "team_value": 99.2,
