@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-07T11:59:53Z",
+  "generated_at": "2026-11-07T13:38:16Z",
   "gameweek": {
     "current": 10,
     "next_deadline": "2026-11-21T11:00:00Z",
@@ -10,7 +10,7 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9610935,
+    "overall_rank": 9620553,
     "total_points": 381,
     "bank": 0.3,
     "team_value": 99.3,
@@ -810,28 +810,12 @@
             "position": "DEF"
           },
           "cost_delta": -0.7,
-          "projected_point_gain": 15.4,
-          "net_projected_gain": 15.4,
-          "quality_score": 64.1,
+          "projected_point_gain": 13.6,
+          "net_projected_gain": 13.6,
+          "quality_score": 60.1,
           "rationale": [
-            "Gvardiol's recent trend (0.7) trails Van Hecke's (5.3).",
+            "Gvardiol's recent trend (0.7) trails Van Hecke's (4.7).",
             "Van Hecke's next fixtures: difficulty 2, 3, 2.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 502,
-            "web_name": "Robertson",
-            "position": "DEF"
-          },
-          "cost_delta": -1.4,
-          "projected_point_gain": 12.3,
-          "net_projected_gain": 12.3,
-          "quality_score": 59.6,
-          "rationale": [
-            "Gvardiol's recent trend (0.7) trails Robertson's (4.4).",
-            "Robertson's next fixtures: difficulty 2, 3, 2.",
             "No hit required."
           ]
         },
@@ -848,6 +832,22 @@
           "rationale": [
             "Gvardiol's recent trend (0.7) trails Hill's (5.0).",
             "Hill's next fixtures: difficulty 3, 3, 4.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 566,
+            "web_name": "Silva",
+            "position": "DEF"
+          },
+          "cost_delta": -0.6,
+          "projected_point_gain": 11.5,
+          "net_projected_gain": 11.5,
+          "quality_score": 53.5,
+          "rationale": [
+            "Gvardiol's recent trend (0.7) trails Silva's (4.8).",
+            "Silva's next fixtures: difficulty 3, 3, 4.",
             "No hit required."
           ]
         }
@@ -870,28 +870,12 @@
             "position": "DEF"
           },
           "cost_delta": -1.2,
-          "projected_point_gain": 14.0,
-          "net_projected_gain": 14.0,
-          "quality_score": 64.1,
+          "projected_point_gain": 12.2,
+          "net_projected_gain": 12.2,
+          "quality_score": 60.1,
           "rationale": [
-            "Tarkowski's recent trend (1.3) trails Van Hecke's (5.3).",
+            "Tarkowski's recent trend (1.3) trails Van Hecke's (4.7).",
             "Van Hecke's next fixtures: difficulty 2, 3, 2.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 502,
-            "web_name": "Robertson",
-            "position": "DEF"
-          },
-          "cost_delta": -1.9,
-          "projected_point_gain": 10.9,
-          "net_projected_gain": 10.9,
-          "quality_score": 59.6,
-          "rationale": [
-            "Tarkowski's recent trend (1.3) trails Robertson's (4.4).",
-            "Robertson's next fixtures: difficulty 2, 3, 2.",
             "No hit required."
           ]
         },
@@ -908,6 +892,22 @@
           "rationale": [
             "Tarkowski's recent trend (1.3) trails Hill's (5.0).",
             "Hill's next fixtures: difficulty 3, 3, 4.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 566,
+            "web_name": "Silva",
+            "position": "DEF"
+          },
+          "cost_delta": -1.1,
+          "projected_point_gain": 10.0,
+          "net_projected_gain": 10.0,
+          "quality_score": 53.5,
+          "rationale": [
+            "Tarkowski's recent trend (1.3) trails Silva's (4.8).",
+            "Silva's next fixtures: difficulty 3, 3, 4.",
             "No hit required."
           ]
         }
@@ -930,28 +930,12 @@
             "position": "DEF"
           },
           "cost_delta": -1.0,
-          "projected_point_gain": 12.4,
-          "net_projected_gain": 12.4,
-          "quality_score": 64.1,
+          "projected_point_gain": 10.5,
+          "net_projected_gain": 10.5,
+          "quality_score": 60.1,
           "rationale": [
-            "Gu\u00e9hi's recent trend (1.8) trails Van Hecke's (5.3).",
+            "Gu\u00e9hi's recent trend (1.8) trails Van Hecke's (4.7).",
             "Van Hecke's next fixtures: difficulty 2, 3, 2.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 502,
-            "web_name": "Robertson",
-            "position": "DEF"
-          },
-          "cost_delta": -1.7,
-          "projected_point_gain": 9.2,
-          "net_projected_gain": 9.2,
-          "quality_score": 59.6,
-          "rationale": [
-            "Gu\u00e9hi's recent trend (1.8) trails Robertson's (4.4).",
-            "Robertson's next fixtures: difficulty 2, 3, 2.",
             "No hit required."
           ]
         },
@@ -968,6 +952,22 @@
           "rationale": [
             "Gu\u00e9hi's recent trend (1.8) trails Hill's (5.0).",
             "Hill's next fixtures: difficulty 3, 3, 4.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 566,
+            "web_name": "Silva",
+            "position": "DEF"
+          },
+          "cost_delta": -0.9,
+          "projected_point_gain": 8.4,
+          "net_projected_gain": 8.4,
+          "quality_score": 53.5,
+          "rationale": [
+            "Gu\u00e9hi's recent trend (1.8) trails Silva's (4.8).",
+            "Silva's next fixtures: difficulty 3, 3, 4.",
             "No hit required."
           ]
         }
