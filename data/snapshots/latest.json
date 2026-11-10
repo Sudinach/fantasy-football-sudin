@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-09T14:33:10Z",
+  "generated_at": "2026-11-10T13:52:46Z",
   "gameweek": {
     "current": 10,
     "next_deadline": "2026-11-21T11:00:00Z",
-    "is_current_gw_finished": false
+    "is_current_gw_finished": true
   },
   "manager": {
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9558459,
+    "overall_rank": 9558293,
     "total_points": 430,
     "bank": 0.3,
     "team_value": 99.3,
@@ -159,7 +159,7 @@
           "difficulty": 3
         }
       ],
-      "quality_score": 15.1
+      "quality_score": 15.7
     },
     {
       "player_id": 31,
@@ -399,7 +399,7 @@
           "difficulty": 3
         }
       ],
-      "quality_score": 24.8
+      "quality_score": 25.2
     },
     {
       "player_id": 183,
@@ -495,7 +495,7 @@
           "difficulty": 3
         }
       ],
-      "quality_score": 48.2
+      "quality_score": 48.4
     },
     {
       "player_id": 411,
@@ -639,7 +639,7 @@
           "difficulty": 2
         }
       ],
-      "quality_score": 58.7
+      "quality_score": 59.5
     },
     {
       "player_id": 388,
@@ -687,7 +687,7 @@
           "difficulty": 3
         }
       ],
-      "quality_score": 21.9
+      "quality_score": 22.5
     },
     {
       "player_id": 552,
@@ -701,9 +701,9 @@
       "now_cost": 5.7,
       "bought_price": 5.7,
       "sell_price": 5.7,
-      "status": "available",
-      "news": "",
-      "chance_of_playing_next_round": 100,
+      "status": "doubtful",
+      "news": "Muscular injury - 75% chance of playing",
+      "chance_of_playing_next_round": 75,
       "total_points_season": 32,
       "recent_gw_points": [
         0,
@@ -735,7 +735,7 @@
           "difficulty": 4
         }
       ],
-      "quality_score": 32.4
+      "quality_score": 32.8
     }
   ],
   "points_trend": {
@@ -1024,7 +1024,7 @@
           "cost_delta": -2.9,
           "projected_point_gain": 9.1,
           "net_projected_gain": 9.1,
-          "quality_score": 43.1,
+          "quality_score": 44.4,
           "rationale": [
             "Cunha's recent trend (1.4) trails Alysson's (4.0).",
             "Alysson's next fixtures: difficulty 2, 2, 3.",
@@ -1052,7 +1052,7 @@
           "cost_delta": -8.6,
           "projected_point_gain": 10.5,
           "net_projected_gain": 10.5,
-          "quality_score": 63.9,
+          "quality_score": 64.1,
           "rationale": [
             "Haaland's recent trend (3.9) trails N.Jackson's (6.5).",
             "N.Jackson's next fixtures: difficulty 2, 2, 3.",
