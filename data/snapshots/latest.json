@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-19T14:49:24Z",
+  "generated_at": "2026-11-20T14:30:09Z",
   "gameweek": {
     "current": 10,
     "next_deadline": "2026-11-21T11:00:00Z",
@@ -10,7 +10,7 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9557746,
+    "overall_rank": 9557602,
     "total_points": 430,
     "bank": 0.3,
     "team_value": 99.3,
@@ -1049,7 +1049,7 @@
             "web_name": "N.Jackson",
             "position": "FWD"
           },
-          "cost_delta": -8.6,
+          "cost_delta": -8.5,
           "projected_point_gain": 10.5,
           "net_projected_gain": 10.5,
           "quality_score": 60.9,
