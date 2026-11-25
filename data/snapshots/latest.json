@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-24T16:37:43Z",
+  "generated_at": "2026-11-25T16:20:23Z",
   "gameweek": {
     "current": 11,
     "next_deadline": "2026-11-27T18:30:00Z",
@@ -10,7 +10,7 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9645807,
+    "overall_rank": 9645713,
     "total_points": 457,
     "bank": 0.8,
     "team_value": 99.7,
@@ -814,7 +814,7 @@
             "web_name": "Hill",
             "position": "DEF"
           },
-          "cost_delta": -0.3,
+          "cost_delta": -0.2,
           "projected_point_gain": 17.9,
           "net_projected_gain": 17.9,
           "quality_score": 65.9,
@@ -874,7 +874,7 @@
             "web_name": "Hill",
             "position": "DEF"
           },
-          "cost_delta": -0.6,
+          "cost_delta": -0.5,
           "projected_point_gain": 17.7,
           "net_projected_gain": 17.7,
           "quality_score": 65.9,
