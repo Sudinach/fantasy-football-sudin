@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T17:03:05Z",
+  "generated_at": "2026-11-28T14:40:02Z",
   "gameweek": {
-    "current": 11,
-    "next_deadline": "2026-11-27T18:30:00Z",
-    "is_current_gw_finished": true
+    "current": 12,
+    "next_deadline": "2026-12-01T18:30:00Z",
+    "is_current_gw_finished": false
   },
   "manager": {
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9645512,
+    "overall_rank": 9685001,
     "total_points": 457,
     "bank": 0.8,
     "team_value": 99.7,
-    "free_transfers_available": 1
+    "free_transfers_available": 2
   },
   "squad": [
     {
@@ -34,22 +34,16 @@
       "chance_of_playing_next_round": 75,
       "total_points_season": 61,
       "recent_gw_points": [
-        9,
         7,
         5,
         6,
-        1
+        1,
+        0
       ],
       "trend": 3.63,
       "consistency": 0.2,
       "defcon_hit_rate": null,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Man City",
-          "is_home": true,
-          "difficulty": 4
-        },
         {
           "event": 13,
           "opponent": "Brentford",
@@ -61,9 +55,15 @@
           "opponent": "Spurs",
           "is_home": false,
           "difficulty": 3
+        },
+        {
+          "event": 15,
+          "opponent": "Bournemouth",
+          "is_home": true,
+          "difficulty": 3
         }
       ],
-      "quality_score": 31.4
+      "quality_score": 31.8
     },
     {
       "player_id": 115,
@@ -82,22 +82,16 @@
       "chance_of_playing_next_round": null,
       "total_points_season": 76,
       "recent_gw_points": [
-        6,
         1,
         9,
         6,
-        1
+        1,
+        0
       ],
       "trend": 2.76,
       "consistency": 0.18,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Newcastle",
-          "is_home": true,
-          "difficulty": 3
-        },
         {
           "event": 13,
           "opponent": "Bournemouth",
@@ -109,9 +103,15 @@
           "opponent": "Nott'm Forest",
           "is_home": false,
           "difficulty": 2
+        },
+        {
+          "event": 15,
+          "opponent": "Everton",
+          "is_home": true,
+          "difficulty": 3
         }
       ],
-      "quality_score": 33.1
+      "quality_score": 30.5
     },
     {
       "player_id": 112,
@@ -130,22 +130,16 @@
       "chance_of_playing_next_round": 100,
       "total_points_season": 63,
       "recent_gw_points": [
-        4,
         7,
         15,
         4,
-        6
+        6,
+        0
       ],
       "trend": 5.7,
       "consistency": 0.22,
       "defcon_hit_rate": 0.36,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Sunderland",
-          "is_home": false,
-          "difficulty": 3
-        },
         {
           "event": 13,
           "opponent": "Fulham",
@@ -157,9 +151,15 @@
           "opponent": "Arsenal",
           "is_home": true,
           "difficulty": 4
+        },
+        {
+          "event": 15,
+          "opponent": "Hull City",
+          "is_home": false,
+          "difficulty": 2
         }
       ],
-      "quality_score": 58.8
+      "quality_score": 61.2
     },
     {
       "player_id": 31,
@@ -178,22 +178,16 @@
       "chance_of_playing_next_round": 100,
       "total_points_season": 58,
       "recent_gw_points": [
-        9,
         14,
         10,
         8,
-        1
+        1,
+        0
       ],
       "trend": 5.51,
       "consistency": 0.19,
       "defcon_hit_rate": 0.4,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Man City",
-          "is_home": true,
-          "difficulty": 4
-        },
         {
           "event": 13,
           "opponent": "Brentford",
@@ -205,9 +199,15 @@
           "opponent": "Spurs",
           "is_home": false,
           "difficulty": 3
+        },
+        {
+          "event": 15,
+          "opponent": "Bournemouth",
+          "is_home": true,
+          "difficulty": 3
         }
       ],
-      "quality_score": 48.6
+      "quality_score": 49.0
     },
     {
       "player_id": 229,
@@ -226,22 +226,16 @@
       "chance_of_playing_next_round": 0,
       "total_points_season": 52,
       "recent_gw_points": [
-        0,
         2,
         6,
         2,
-        -4
+        -4,
+        0
       ],
       "trend": 0.48,
       "consistency": 0.16,
       "defcon_hit_rate": 0.45,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Liverpool",
-          "is_home": true,
-          "difficulty": 4
-        },
         {
           "event": 13,
           "opponent": "Aston Villa",
@@ -253,9 +247,15 @@
           "opponent": "Fulham",
           "is_home": true,
           "difficulty": 2
+        },
+        {
+          "event": 15,
+          "opponent": "Brighton",
+          "is_home": false,
+          "difficulty": 4
         }
       ],
-      "quality_score": 23.2
+      "quality_score": 20.6
     },
     {
       "player_id": 236,
@@ -275,21 +275,15 @@
       "total_points_season": 52,
       "recent_gw_points": [
         2,
-        2,
         4,
         9,
-        2
+        2,
+        0
       ],
       "trend": 2.73,
       "consistency": 0.21,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Liverpool",
-          "is_home": true,
-          "difficulty": 4
-        },
         {
           "event": 13,
           "opponent": "Aston Villa",
@@ -301,9 +295,15 @@
           "opponent": "Fulham",
           "is_home": true,
           "difficulty": 2
+        },
+        {
+          "event": 15,
+          "opponent": "Brighton",
+          "is_home": false,
+          "difficulty": 4
         }
       ],
-      "quality_score": 34.1
+      "quality_score": 31.5
     },
     {
       "player_id": 124,
@@ -314,30 +314,24 @@
       "squad_role": "starting",
       "is_captain": false,
       "is_vice_captain": false,
-      "now_cost": 6.3,
+      "now_cost": 6.4,
       "bought_price": 5.8,
-      "sell_price": 6.0,
+      "sell_price": 6.1,
       "status": "available",
       "news": "",
       "chance_of_playing_next_round": null,
       "total_points_season": 74,
       "recent_gw_points": [
-        5,
         0,
         2,
         10,
-        4
+        4,
+        0
       ],
       "trend": 3.15,
       "consistency": 0.15,
       "defcon_hit_rate": 0.09,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Newcastle",
-          "is_home": true,
-          "difficulty": 3
-        },
         {
           "event": 13,
           "opponent": "Bournemouth",
@@ -349,9 +343,15 @@
           "opponent": "Nott'm Forest",
           "is_home": false,
           "difficulty": 2
+        },
+        {
+          "event": 15,
+          "opponent": "Everton",
+          "is_home": true,
+          "difficulty": 3
         }
       ],
-      "quality_score": 35.3
+      "quality_score": 32.7
     },
     {
       "player_id": 428,
@@ -371,21 +371,15 @@
       "total_points_season": 46,
       "recent_gw_points": [
         1,
-        1,
         2,
         5,
-        1
+        1,
+        0
       ],
       "trend": 1.06,
       "consistency": 0.21,
       "defcon_hit_rate": 0.09,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Brentford",
-          "is_home": true,
-          "difficulty": 3
-        },
         {
           "event": 13,
           "opponent": "Newcastle",
@@ -397,9 +391,15 @@
           "opponent": "Coventry City",
           "is_home": true,
           "difficulty": 2
+        },
+        {
+          "event": 15,
+          "opponent": "Crystal Palace",
+          "is_home": false,
+          "difficulty": 2
         }
       ],
-      "quality_score": 27.2
+      "quality_score": 30.6
     },
     {
       "player_id": 183,
@@ -418,22 +418,16 @@
       "chance_of_playing_next_round": 100,
       "total_points_season": 49,
       "recent_gw_points": [
-        6,
         2,
         9,
         2,
-        10
+        10,
+        0
       ],
       "trend": 4.08,
       "consistency": 0.25,
       "defcon_hit_rate": 0.09,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Leeds",
-          "is_home": false,
-          "difficulty": 3
-        },
         {
           "event": 13,
           "opponent": "Ipswich Town",
@@ -445,9 +439,15 @@
           "opponent": "Man Utd",
           "is_home": false,
           "difficulty": 3
+        },
+        {
+          "event": 15,
+          "opponent": "Aston Villa",
+          "is_home": true,
+          "difficulty": 3
         }
       ],
-      "quality_score": 50.3
+      "quality_score": 48.7
     },
     {
       "player_id": 45,
@@ -466,22 +466,16 @@
       "chance_of_playing_next_round": null,
       "total_points_season": 45,
       "recent_gw_points": [
-        1,
         6,
         0,
         10,
-        1
+        1,
+        0
       ],
       "trend": 2.78,
       "consistency": 0.21,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Ipswich Town",
-          "is_home": false,
-          "difficulty": 2
-        },
         {
           "event": 13,
           "opponent": "Everton",
@@ -493,9 +487,15 @@
           "opponent": "Crystal Palace",
           "is_home": true,
           "difficulty": 2
+        },
+        {
+          "event": 15,
+          "opponent": "Coventry City",
+          "is_home": false,
+          "difficulty": 2
         }
       ],
-      "quality_score": 41.5
+      "quality_score": 40.9
     },
     {
       "player_id": 411,
@@ -514,22 +514,16 @@
       "chance_of_playing_next_round": 100,
       "total_points_season": 72,
       "recent_gw_points": [
-        13,
         8,
         2,
         2,
-        2
+        2,
+        0
       ],
       "trend": 2.12,
       "consistency": 0.21,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Arsenal",
-          "is_home": false,
-          "difficulty": 5
-        },
         {
           "event": 13,
           "opponent": "Leeds",
@@ -541,9 +535,15 @@
           "opponent": "Brentford",
           "is_home": false,
           "difficulty": 4
+        },
+        {
+          "event": 15,
+          "opponent": "Chelsea",
+          "is_home": true,
+          "difficulty": 4
         }
       ],
-      "quality_score": 18.6
+      "quality_score": 17.9
     },
     {
       "player_id": 109,
@@ -554,30 +554,24 @@
       "squad_role": "bench",
       "is_captain": false,
       "is_vice_captain": false,
-      "now_cost": 4.7,
+      "now_cost": 4.8,
       "bought_price": 4.6,
-      "sell_price": 4.6,
+      "sell_price": 4.7,
       "status": "available",
       "news": "",
       "chance_of_playing_next_round": null,
       "total_points_season": 59,
       "recent_gw_points": [
-        6,
         2,
         11,
         6,
-        2
+        2,
+        0
       ],
       "trend": 3.53,
       "consistency": 0.25,
       "defcon_hit_rate": null,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Newcastle",
-          "is_home": true,
-          "difficulty": 3
-        },
         {
           "event": 13,
           "opponent": "Bournemouth",
@@ -589,9 +583,15 @@
           "opponent": "Nott'm Forest",
           "is_home": false,
           "difficulty": 2
+        },
+        {
+          "event": 15,
+          "opponent": "Everton",
+          "is_home": true,
+          "difficulty": 3
         }
       ],
-      "quality_score": 41.7
+      "quality_score": 39.0
     },
     {
       "player_id": 165,
@@ -602,15 +602,15 @@
       "squad_role": "bench",
       "is_captain": false,
       "is_vice_captain": false,
-      "now_cost": 7.6,
+      "now_cost": 7.5,
       "bought_price": 7.8,
-      "sell_price": 7.6,
+      "sell_price": 7.5,
       "status": "injured",
       "news": "Thigh injury - Unknown return date",
       "chance_of_playing_next_round": 0,
       "total_points_season": 47,
       "recent_gw_points": [
-        2,
+        0,
         0,
         0,
         0,
@@ -620,12 +620,6 @@
       "consistency": 0.18,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Nott'm Forest",
-          "is_home": false,
-          "difficulty": 2
-        },
         {
           "event": 13,
           "opponent": "Crystal Palace",
@@ -637,9 +631,15 @@
           "opponent": "Liverpool",
           "is_home": true,
           "difficulty": 4
+        },
+        {
+          "event": 15,
+          "opponent": "Man City",
+          "is_home": false,
+          "difficulty": 5
         }
       ],
-      "quality_score": 55.5
+      "quality_score": 38.9
     },
     {
       "player_id": 388,
@@ -658,22 +658,16 @@
       "chance_of_playing_next_round": 100,
       "total_points_season": 39,
       "recent_gw_points": [
-        1,
         0,
         0,
         0,
-        2
+        2,
+        0
       ],
       "trend": 0.5,
       "consistency": 0.26,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Arsenal",
-          "is_home": false,
-          "difficulty": 5
-        },
         {
           "event": 13,
           "opponent": "Leeds",
@@ -685,9 +679,15 @@
           "opponent": "Brentford",
           "is_home": false,
           "difficulty": 4
+        },
+        {
+          "event": 15,
+          "opponent": "Chelsea",
+          "is_home": true,
+          "difficulty": 4
         }
       ],
-      "quality_score": 8.7
+      "quality_score": 8.1
     },
     {
       "player_id": 552,
@@ -706,22 +706,16 @@
       "chance_of_playing_next_round": 0,
       "total_points_season": 32,
       "recent_gw_points": [
-        0,
         2,
         2,
         4,
+        0,
         0
       ],
       "trend": 4.1,
       "consistency": 0.17,
       "defcon_hit_rate": 0.0,
       "fixture_difficulty_next_3": [
-        {
-          "event": 12,
-          "opponent": "Spurs",
-          "is_home": true,
-          "difficulty": 3
-        },
         {
           "event": 13,
           "opponent": "Liverpool",
@@ -733,9 +727,15 @@
           "opponent": "Newcastle",
           "is_home": false,
           "difficulty": 3
+        },
+        {
+          "event": 15,
+          "opponent": "Nott'm Forest",
+          "is_home": true,
+          "difficulty": 3
         }
       ],
-      "quality_score": 35.0
+      "quality_score": 31.4
     }
   ],
   "points_trend": {
@@ -794,19 +794,84 @@
         "event": 11,
         "points": 27,
         "overall_rank": 9645830
+      },
+      {
+        "event": 12,
+        "points": 0,
+        "overall_rank": 9685066
       }
     ]
   },
   "suggestions": [
     {
-      "id": "gw11-001",
+      "id": "gw12-001",
+      "player_out": {
+        "player_id": 428,
+        "web_name": "Cunha",
+        "position": "MID"
+      },
+      "hit_cost": 0,
+      "free_transfers_available_at_suggestion": 2,
+      "options": [
+        {
+          "player_in": {
+            "player_id": 366,
+            "web_name": "Wirtz",
+            "position": "MID"
+          },
+          "cost_delta": -0.2,
+          "projected_point_gain": 16.7,
+          "net_projected_gain": 16.7,
+          "quality_score": 56.1,
+          "rationale": [
+            "Cunha's recent trend (1.1) trails Wirtz's (6.7).",
+            "Wirtz's next fixtures: difficulty 2, 4, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 480,
+            "web_name": "Gibbs-White",
+            "position": "MID"
+          },
+          "cost_delta": 0.0,
+          "projected_point_gain": 10.7,
+          "net_projected_gain": 10.7,
+          "quality_score": 44.3,
+          "rationale": [
+            "Cunha's recent trend (1.1) trails Gibbs-White's (4.7).",
+            "Gibbs-White's next fixtures: difficulty 2, 4, 3.",
+            "No hit required."
+          ]
+        },
+        {
+          "player_in": {
+            "player_id": 52,
+            "web_name": "Alysson",
+            "position": "MID"
+          },
+          "cost_delta": -2.9,
+          "projected_point_gain": 10.0,
+          "net_projected_gain": 10.0,
+          "quality_score": 45.7,
+          "rationale": [
+            "Cunha's recent trend (1.1) trails Alysson's (4.1).",
+            "Alysson's next fixtures: difficulty 3, 2, 2.",
+            "No hit required."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gw12-002",
       "player_out": {
         "player_id": 388,
         "web_name": "Gu\u00e9hi",
         "position": "DEF"
       },
       "hit_cost": 0,
-      "free_transfers_available_at_suggestion": 1,
+      "free_transfers_available_at_suggestion": 2,
       "options": [
         {
           "player_in": {
@@ -815,12 +880,12 @@
             "position": "DEF"
           },
           "cost_delta": -0.2,
-          "projected_point_gain": 17.9,
-          "net_projected_gain": 17.9,
-          "quality_score": 65.9,
+          "projected_point_gain": 15.9,
+          "net_projected_gain": 15.9,
+          "quality_score": 53.3,
           "rationale": [
             "Gu\u00e9hi's recent trend (0.5) trails Hill's (6.4).",
-            "Hill's next fixtures: difficulty 3, 4, 2.",
+            "Hill's next fixtures: difficulty 4, 2, 5.",
             "No hit required."
           ]
         },
@@ -831,12 +896,12 @@
             "position": "DEF"
           },
           "cost_delta": -0.4,
-          "projected_point_gain": 13.4,
-          "net_projected_gain": 13.4,
-          "quality_score": 54.2,
+          "projected_point_gain": 13.3,
+          "net_projected_gain": 13.3,
+          "quality_score": 51.6,
           "rationale": [
             "Gu\u00e9hi's recent trend (0.5) trails Araujo's (4.9).",
-            "Araujo's next fixtures: difficulty 3, 2, 4.",
+            "Araujo's next fixtures: difficulty 2, 4, 3.",
             "No hit required."
           ]
         },
@@ -847,26 +912,26 @@
             "position": "DEF"
           },
           "cost_delta": -0.8,
-          "projected_point_gain": 13.3,
-          "net_projected_gain": 13.3,
-          "quality_score": 59.8,
+          "projected_point_gain": 11.7,
+          "net_projected_gain": 11.7,
+          "quality_score": 47.2,
           "rationale": [
             "Gu\u00e9hi's recent trend (0.5) trails Silva's (4.8).",
-            "Silva's next fixtures: difficulty 3, 4, 2.",
+            "Silva's next fixtures: difficulty 4, 2, 5.",
             "No hit required."
           ]
         }
       ]
     },
     {
-      "id": "gw11-002",
+      "id": "gw12-003",
       "player_out": {
         "player_id": 229,
         "web_name": "Tarkowski",
         "position": "DEF"
       },
       "hit_cost": 0,
-      "free_transfers_available_at_suggestion": 1,
+      "free_transfers_available_at_suggestion": 2,
       "options": [
         {
           "player_in": {
@@ -875,12 +940,12 @@
             "position": "DEF"
           },
           "cost_delta": -0.5,
-          "projected_point_gain": 17.7,
-          "net_projected_gain": 17.7,
-          "quality_score": 65.9,
+          "projected_point_gain": 15.8,
+          "net_projected_gain": 15.8,
+          "quality_score": 53.3,
           "rationale": [
             "Tarkowski's recent trend (0.5) trails Hill's (6.4).",
-            "Hill's next fixtures: difficulty 3, 4, 2.",
+            "Hill's next fixtures: difficulty 4, 2, 5.",
             "No hit required."
           ]
         },
@@ -893,10 +958,10 @@
           "cost_delta": -0.7,
           "projected_point_gain": 13.2,
           "net_projected_gain": 13.2,
-          "quality_score": 54.2,
+          "quality_score": 51.6,
           "rationale": [
             "Tarkowski's recent trend (0.5) trails Araujo's (4.9).",
-            "Araujo's next fixtures: difficulty 3, 2, 4.",
+            "Araujo's next fixtures: difficulty 2, 4, 3.",
             "No hit required."
           ]
         },
@@ -907,86 +972,26 @@
             "position": "DEF"
           },
           "cost_delta": -1.1,
-          "projected_point_gain": 13.1,
-          "net_projected_gain": 13.1,
-          "quality_score": 59.8,
+          "projected_point_gain": 11.6,
+          "net_projected_gain": 11.6,
+          "quality_score": 47.2,
           "rationale": [
             "Tarkowski's recent trend (0.5) trails Silva's (4.8).",
-            "Silva's next fixtures: difficulty 3, 4, 2.",
+            "Silva's next fixtures: difficulty 4, 2, 5.",
             "No hit required."
           ]
         }
       ]
     },
     {
-      "id": "gw11-003",
-      "player_out": {
-        "player_id": 428,
-        "web_name": "Cunha",
-        "position": "MID"
-      },
-      "hit_cost": 0,
-      "free_transfers_available_at_suggestion": 1,
-      "options": [
-        {
-          "player_in": {
-            "player_id": 366,
-            "web_name": "Wirtz",
-            "position": "MID"
-          },
-          "cost_delta": -0.3,
-          "projected_point_gain": 16.9,
-          "net_projected_gain": 16.9,
-          "quality_score": 58.7,
-          "rationale": [
-            "Cunha's recent trend (1.1) trails Wirtz's (6.7).",
-            "Wirtz's next fixtures: difficulty 3, 2, 4.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 336,
-            "web_name": "Okafor",
-            "position": "MID"
-          },
-          "cost_delta": -2.0,
-          "projected_point_gain": 10.3,
-          "net_projected_gain": 10.3,
-          "quality_score": 42.7,
-          "rationale": [
-            "Cunha's recent trend (1.1) trails Okafor's (4.5).",
-            "Okafor's next fixtures: difficulty 2, 5, 2.",
-            "No hit required."
-          ]
-        },
-        {
-          "player_in": {
-            "player_id": 52,
-            "web_name": "Alysson",
-            "position": "MID"
-          },
-          "cost_delta": -2.9,
-          "projected_point_gain": 10.2,
-          "net_projected_gain": 10.2,
-          "quality_score": 45.7,
-          "rationale": [
-            "Cunha's recent trend (1.1) trails Alysson's (4.1).",
-            "Alysson's next fixtures: difficulty 2, 3, 2.",
-            "No hit required."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "gw11-004",
+      "id": "gw12-004",
       "player_out": {
         "player_id": 411,
         "web_name": "Haaland",
         "position": "FWD"
       },
       "hit_cost": 0,
-      "free_transfers_available_at_suggestion": 1,
+      "free_transfers_available_at_suggestion": 2,
       "options": [
         {
           "player_in": {
@@ -995,12 +1000,12 @@
             "position": "FWD"
           },
           "cost_delta": -10.1,
-          "projected_point_gain": 14.6,
-          "net_projected_gain": 14.6,
-          "quality_score": 57.9,
+          "projected_point_gain": 13.3,
+          "net_projected_gain": 13.3,
+          "quality_score": 50.2,
           "rationale": [
             "Haaland's recent trend (2.1) trails McBurnie's (6.7).",
-            "McBurnie's next fixtures: difficulty 2, 3, 4.",
+            "McBurnie's next fixtures: difficulty 3, 4, 3.",
             "No hit required."
           ]
         },
@@ -1011,42 +1016,42 @@
             "position": "FWD"
           },
           "cost_delta": -8.3,
-          "projected_point_gain": 12.8,
-          "net_projected_gain": 12.8,
+          "projected_point_gain": 12.4,
+          "net_projected_gain": 12.4,
           "quality_score": 58.1,
           "rationale": [
             "Haaland's recent trend (2.1) trails N.Jackson's (5.5).",
-            "N.Jackson's next fixtures: difficulty 2, 3, 2.",
+            "N.Jackson's next fixtures: difficulty 3, 2, 2.",
             "No hit required."
           ]
         },
         {
           "player_in": {
-            "player_id": 79,
-            "web_name": "Evanilson",
+            "player_id": 170,
+            "web_name": "Emegha",
             "position": "FWD"
           },
-          "cost_delta": -9.0,
+          "cost_delta": -10.7,
           "projected_point_gain": 10.4,
           "net_projected_gain": 10.4,
-          "quality_score": 53.2,
+          "quality_score": 37.0,
           "rationale": [
-            "Haaland's recent trend (2.1) trails Evanilson's (5.3).",
-            "Evanilson's next fixtures: difficulty 3, 4, 2.",
+            "Haaland's recent trend (2.1) trails Emegha's (6.0).",
+            "Emegha's next fixtures: difficulty 2, 4, 5.",
             "No hit required."
           ]
         }
       ]
     },
     {
-      "id": "gw11-005",
+      "id": "gw12-005",
       "player_out": {
         "player_id": 115,
         "web_name": "De Cuyper",
         "position": "DEF"
       },
       "hit_cost": 0,
-      "free_transfers_available_at_suggestion": 1,
+      "free_transfers_available_at_suggestion": 2,
       "options": [
         {
           "player_in": {
@@ -1055,12 +1060,12 @@
             "position": "DEF"
           },
           "cost_delta": 0.4,
-          "projected_point_gain": 10.9,
-          "net_projected_gain": 10.9,
-          "quality_score": 65.9,
+          "projected_point_gain": 9.0,
+          "net_projected_gain": 9.0,
+          "quality_score": 53.3,
           "rationale": [
             "De Cuyper's recent trend (2.8) trails Hill's (6.4).",
-            "Hill's next fixtures: difficulty 3, 4, 2.",
+            "Hill's next fixtures: difficulty 4, 2, 5.",
             "No hit required."
           ]
         },
@@ -1073,10 +1078,10 @@
           "cost_delta": 0.2,
           "projected_point_gain": 6.4,
           "net_projected_gain": 6.4,
-          "quality_score": 54.2,
+          "quality_score": 51.6,
           "rationale": [
             "De Cuyper's recent trend (2.8) trails Araujo's (4.9).",
-            "Araujo's next fixtures: difficulty 3, 2, 4.",
+            "Araujo's next fixtures: difficulty 2, 4, 3.",
             "No hit required."
           ]
         },
@@ -1087,12 +1092,12 @@
             "position": "DEF"
           },
           "cost_delta": -0.2,
-          "projected_point_gain": 6.2,
-          "net_projected_gain": 6.2,
-          "quality_score": 59.8,
+          "projected_point_gain": 4.8,
+          "net_projected_gain": 4.8,
+          "quality_score": 47.2,
           "rationale": [
             "De Cuyper's recent trend (2.8) trails Silva's (4.8).",
-            "Silva's next fixtures: difficulty 3, 4, 2.",
+            "Silva's next fixtures: difficulty 4, 2, 5.",
             "No hit required."
           ]
         }
@@ -1131,6 +1136,6 @@
       "defcon_hit_rate": 0.1,
       "minutes_reliability": 0.05
     },
-    "source_data_as_of_event": 11
+    "source_data_as_of_event": 12
   }
 }
