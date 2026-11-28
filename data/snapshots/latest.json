@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-28T14:40:02Z",
+  "generated_at": "2026-11-28T15:52:31Z",
   "gameweek": {
     "current": 12,
     "next_deadline": "2026-12-01T18:30:00Z",
@@ -10,8 +10,8 @@
     "entry_id": 677035,
     "team_name": "theRedFreakingDevils",
     "manager_name": "Sudin Acharya",
-    "overall_rank": 9685001,
-    "total_points": 457,
+    "overall_rank": 9693316,
+    "total_points": 458,
     "bank": 0.8,
     "team_value": 99.7,
     "free_transfers_available": 2
@@ -416,17 +416,17 @@
       "status": "available",
       "news": "",
       "chance_of_playing_next_round": 100,
-      "total_points_season": 49,
+      "total_points_season": 50,
       "recent_gw_points": [
         2,
         9,
         2,
         10,
-        0
+        1
       ],
-      "trend": 4.08,
-      "consistency": 0.25,
-      "defcon_hit_rate": 0.09,
+      "trend": 3.59,
+      "consistency": 0.24,
+      "defcon_hit_rate": 0.08,
       "fixture_difficulty_next_3": [
         {
           "event": 13,
@@ -447,7 +447,7 @@
           "difficulty": 3
         }
       ],
-      "quality_score": 48.7
+      "quality_score": 44.9
     },
     {
       "player_id": 45,
